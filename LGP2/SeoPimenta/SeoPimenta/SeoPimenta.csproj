@@ -111,6 +111,108 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\estoqueProduto\cadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\cadastrarProduto.Designer.cs">
+      <DependentUpon>cadastrarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\editarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\editarProduto.Designer.cs">
+      <DependentUpon>editarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\telaEstoqueProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\telaEstoqueProduto.Designer.cs">
+      <DependentUpon>telaEstoqueProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\visualizarEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\visualizarEstoque.Designer.cs">
+      <DependentUpon>visualizarEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\visualizarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\estoqueProduto\visualizarProdutos.Designer.cs">
+      <DependentUpon>visualizarProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\cadastrarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\cadastrarFornecedor.Designer.cs">
+      <DependentUpon>cadastrarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\editarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\editarFornecedor.Designer.cs">
+      <DependentUpon>editarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\telaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\telaFornecedor.Designer.cs">
+      <DependentUpon>telaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\visualizarFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFornecedor\visualizarFornecedores.Designer.cs">
+      <DependentUpon>visualizarFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\cadastrarFuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\cadastrarFuncio.Designer.cs">
+      <DependentUpon>cadastrarFuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\cadastrarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\cadastrarUser.Designer.cs">
+      <DependentUpon>cadastrarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\editarFuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\editarFuncio.Designer.cs">
+      <DependentUpon>editarFuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\editarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\editarUser.Designer.cs">
+      <DependentUpon>editarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\telaFuncioUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\telaFuncioUser.Designer.cs">
+      <DependentUpon>telaFuncioUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\visualizarFuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\visualizarFuncio.Designer.cs">
+      <DependentUpon>visualizarFuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\visualizarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\menuFuncionarioUsuario\visualizarUser.Designer.cs">
+      <DependentUpon>visualizarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\telaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\telaInicial.Designer.cs">
+      <DependentUpon>telaInicial.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +226,57 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\estoqueProduto\cadastrarProduto.resx">
+      <DependentUpon>cadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\estoqueProduto\editarProduto.resx">
+      <DependentUpon>editarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\estoqueProduto\telaEstoqueProduto.resx">
+      <DependentUpon>telaEstoqueProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\estoqueProduto\visualizarEstoque.resx">
+      <DependentUpon>visualizarEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\estoqueProduto\visualizarProdutos.resx">
+      <DependentUpon>visualizarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFornecedor\cadastrarFornecedor.resx">
+      <DependentUpon>cadastrarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFornecedor\editarFornecedor.resx">
+      <DependentUpon>editarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFornecedor\telaFornecedor.resx">
+      <DependentUpon>telaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFornecedor\visualizarFornecedores.resx">
+      <DependentUpon>visualizarFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\cadastrarFuncio.resx">
+      <DependentUpon>cadastrarFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\cadastrarUser.resx">
+      <DependentUpon>cadastrarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\editarFuncio.resx">
+      <DependentUpon>editarFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\editarUser.resx">
+      <DependentUpon>editarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\telaFuncioUser.resx">
+      <DependentUpon>telaFuncioUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\visualizarFuncio.resx">
+      <DependentUpon>visualizarFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\menuFuncionarioUsuario\visualizarUser.resx">
+      <DependentUpon>visualizarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\telaInicial.resx">
+      <DependentUpon>telaInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
