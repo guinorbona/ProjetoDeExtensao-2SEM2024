@@ -41,6 +41,7 @@ C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2
 C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.csproj.CopyComplete
+<<<<<<< Updated upstream
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\bin\Debug\SeoPimenta.exe.config
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\bin\Debug\SeoPimenta.exe
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\bin\Debug\SeoPimenta.pdb
@@ -100,3 +101,24 @@ C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.visualizarFuncio.resources
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.visualizarUser.resources
 C:\Users\Gui\Source\Repos\guinorbona\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.cadastrarProduto.resources
+=======
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.MenuPrincipal.resources
+>>>>>>> Stashed changes
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.cadastrarProduto.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.editarProduto.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.telaEstoqueProduto.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.visualizarEstoque.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.estoqueProduto.visualizarProdutos.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFornecedor.cadastrarFornecedor.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFornecedor.editarFornecedor.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFornecedor.telaFornecedor.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFornecedor.visualizarFornecedores.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.cadastrarFuncio.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.cadastrarUser.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.editarFuncio.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.editarUser.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.telaFuncioUser.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.visualizarFuncio.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.menuFuncionarioUsuario.visualizarUser.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.telaInicial.resources
+C:\Users\Wellington\OneDrive\Área de Trabalho\3Semestre\pj2\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.telaLogin.resources

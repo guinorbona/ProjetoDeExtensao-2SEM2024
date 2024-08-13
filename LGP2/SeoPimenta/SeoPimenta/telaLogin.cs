@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace SeoPimenta
 {
-    public partial class Form1 : Form
+    public partial class telaLogin : Form
     {
-        public Form1()
+        public telaLogin()
         {
             InitializeComponent();
         }
@@ -94,13 +94,13 @@ namespace SeoPimenta
                             usuario.setEndereco(endereco);
 
                             conexao.fecharConexao();
+
+                             telaInicial telaIncial = new telaInicial(this);
+                             this.Hide();
+                             telaIncial.Show();
                         
 
-                            this.Hide();
-
-                        //cHAMAR FORMULARIO PRINCIPAL
-                           
-                        }
+                    }
                         else
                         {
                             throw new Exception("Login inválido");

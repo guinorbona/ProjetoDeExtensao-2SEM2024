@@ -145,6 +145,7 @@ namespace SeoPimenta.Telas.menuFuncionarioUsuario
             thread1.SetApartmentState(ApartmentState.STA);
             thread1.Start();
         }
+       
 
         private void btnVisualizarUser_telaFuncioUser_Click(object sender, EventArgs e)
         {
