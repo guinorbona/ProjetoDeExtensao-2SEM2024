@@ -32,55 +32,55 @@
             this.dscFornecedor_telaInicial = new System.Windows.Forms.Label();
             this.txtFornecedor_telaInicial = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.iconFuncionario_telaInicial = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.iconFornecedor_telaInicial = new System.Windows.Forms.PictureBox();
+            this.iconProduto_telaInicial = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconFuncionario_telaInicial = new System.Windows.Forms.PictureBox();
-            this.iconFornecedor_telaInicial = new System.Windows.Forms.PictureBox();
-            this.iconProduto_telaInicial = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.msgBemVindo_telaInicial = new System.Windows.Forms.Label();
-            this.nameUser_telaInicial = new System.Windows.Forms.Label();
             this.imgUser_telaInicial = new System.Windows.Forms.PictureBox();
+            this.nameUser_telaInicial = new System.Windows.Forms.Label();
+            this.msgBemVindo_telaInicial = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnEstoqueProdutos = new System.Windows.Forms.Button();
             this.painelEstoqueProdutos = new System.Windows.Forms.Panel();
-            this.btnVizualizarProdutos = new System.Windows.Forms.Button();
-            this.btnCadastrarProdutos = new System.Windows.Forms.Button();
-            this.btnEditarProdutos = new System.Windows.Forms.Button();
-            this.btnExcluirProdutos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnExcluirProdutos = new System.Windows.Forms.Button();
+            this.btnEditarProdutos = new System.Windows.Forms.Button();
+            this.btnCadastrarProdutos = new System.Windows.Forms.Button();
+            this.btnVizualizarProdutos = new System.Windows.Forms.Button();
             this.btnMenuFuncionarios = new System.Windows.Forms.Button();
             this.painelMenuFuncionarios = new System.Windows.Forms.Panel();
-            this.btnVizualizarFuncionarios = new System.Windows.Forms.Button();
-            this.btnCadastrarFuncionarios = new System.Windows.Forms.Button();
-            this.btnEditarFuncionarios = new System.Windows.Forms.Button();
-            this.btnExcluirFuncionarios = new System.Windows.Forms.Button();
-            this.btnVizualizarUsuarios = new System.Windows.Forms.Button();
-            this.btnCadastrarUsuarios = new System.Windows.Forms.Button();
-            this.btnEditarUsuarios = new System.Windows.Forms.Button();
-            this.btnExcluirUsuarios = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnExcluirUsuarios = new System.Windows.Forms.Button();
+            this.btnEditarUsuarios = new System.Windows.Forms.Button();
+            this.btnCadastrarUsuarios = new System.Windows.Forms.Button();
+            this.btnVizualizarUsuarios = new System.Windows.Forms.Button();
+            this.btnExcluirFuncionarios = new System.Windows.Forms.Button();
+            this.btnEditarFuncionarios = new System.Windows.Forms.Button();
+            this.btnCadastrarFuncionarios = new System.Windows.Forms.Button();
+            this.btnVizualizarFuncionarios = new System.Windows.Forms.Button();
             this.btnMenuFornecedores = new System.Windows.Forms.Button();
             this.painelMenuFornecedores = new System.Windows.Forms.Panel();
-            this.btnVizualizarFornecedores = new System.Windows.Forms.Button();
-            this.btnCadastrarFornecedores = new System.Windows.Forms.Button();
-            this.btnEditarFornecedores = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditarFornecedores = new System.Windows.Forms.Button();
+            this.btnCadastrarFornecedores = new System.Windows.Forms.Button();
+            this.btnVizualizarFornecedores = new System.Windows.Forms.Button();
             this.navBar_telaInicial = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFuncionario_telaInicial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFornecedor_telaInicial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconProduto_telaInicial)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFuncionario_telaInicial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFornecedor_telaInicial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProduto_telaInicial)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser_telaInicial)).BeginInit();
             this.painelEstoqueProdutos.SuspendLayout();
@@ -129,6 +129,26 @@
             this.panelChildForm.TabStop = false;
             this.panelChildForm.Enter += new System.EventHandler(this.body_telaInicial_Enter);
             // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Location = new System.Drawing.Point(657, 113);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 460);
+            this.panel3.TabIndex = 21;
+            // 
+            // iconFuncionario_telaInicial
+            // 
+            this.iconFuncionario_telaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.iconFuncionario_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconFuncionario_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconFuncionario_telaInicial.Image")));
+            this.iconFuncionario_telaInicial.Location = new System.Drawing.Point(154, 200);
+            this.iconFuncionario_telaInicial.Name = "iconFuncionario_telaInicial";
+            this.iconFuncionario_telaInicial.Size = new System.Drawing.Size(135, 128);
+            this.iconFuncionario_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconFuncionario_telaInicial.TabIndex = 18;
+            this.iconFuncionario_telaInicial.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -139,6 +159,28 @@
             this.label3.Size = new System.Drawing.Size(551, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Bem-vindo ao gerenciador de estoque do Seo Pimenta Rosa!";
+            // 
+            // iconFornecedor_telaInicial
+            // 
+            this.iconFornecedor_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconFornecedor_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconFornecedor_telaInicial.Image")));
+            this.iconFornecedor_telaInicial.Location = new System.Drawing.Point(533, 409);
+            this.iconFornecedor_telaInicial.Name = "iconFornecedor_telaInicial";
+            this.iconFornecedor_telaInicial.Size = new System.Drawing.Size(160, 164);
+            this.iconFornecedor_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconFornecedor_telaInicial.TabIndex = 20;
+            this.iconFornecedor_telaInicial.TabStop = false;
+            // 
+            // iconProduto_telaInicial
+            // 
+            this.iconProduto_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconProduto_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconProduto_telaInicial.Image")));
+            this.iconProduto_telaInicial.Location = new System.Drawing.Point(31, 168);
+            this.iconProduto_telaInicial.Name = "iconProduto_telaInicial";
+            this.iconProduto_telaInicial.Size = new System.Drawing.Size(133, 116);
+            this.iconProduto_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconProduto_telaInicial.TabIndex = 19;
+            this.iconProduto_telaInicial.TabStop = false;
             // 
             // panel1
             // 
@@ -153,17 +195,6 @@
             this.panel1.Size = new System.Drawing.Size(1350, 45);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(11, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Menu Principal";
             // 
             // pictureBox3
             // 
@@ -195,39 +226,16 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // iconFuncionario_telaInicial
+            // label4
             // 
-            this.iconFuncionario_telaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.iconFuncionario_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconFuncionario_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconFuncionario_telaInicial.Image")));
-            this.iconFuncionario_telaInicial.Location = new System.Drawing.Point(154, 200);
-            this.iconFuncionario_telaInicial.Name = "iconFuncionario_telaInicial";
-            this.iconFuncionario_telaInicial.Size = new System.Drawing.Size(135, 128);
-            this.iconFuncionario_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.iconFuncionario_telaInicial.TabIndex = 18;
-            this.iconFuncionario_telaInicial.TabStop = false;
-            // 
-            // iconFornecedor_telaInicial
-            // 
-            this.iconFornecedor_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconFornecedor_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconFornecedor_telaInicial.Image")));
-            this.iconFornecedor_telaInicial.Location = new System.Drawing.Point(533, 409);
-            this.iconFornecedor_telaInicial.Name = "iconFornecedor_telaInicial";
-            this.iconFornecedor_telaInicial.Size = new System.Drawing.Size(160, 164);
-            this.iconFornecedor_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.iconFornecedor_telaInicial.TabIndex = 20;
-            this.iconFornecedor_telaInicial.TabStop = false;
-            // 
-            // iconProduto_telaInicial
-            // 
-            this.iconProduto_telaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconProduto_telaInicial.Image = ((System.Drawing.Image)(resources.GetObject("iconProduto_telaInicial.Image")));
-            this.iconProduto_telaInicial.Location = new System.Drawing.Point(31, 168);
-            this.iconProduto_telaInicial.Name = "iconProduto_telaInicial";
-            this.iconProduto_telaInicial.Size = new System.Drawing.Size(133, 116);
-            this.iconProduto_telaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.iconProduto_telaInicial.TabIndex = 19;
-            this.iconProduto_telaInicial.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(11, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 24);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Menu Principal";
             // 
             // panel2
             // 
@@ -241,14 +249,23 @@
             this.panel2.Size = new System.Drawing.Size(295, 92);
             this.panel2.TabIndex = 21;
             // 
-            // label1
+            // imgUser_telaInicial
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "_____________________________________________";
+            this.imgUser_telaInicial.Location = new System.Drawing.Point(9, 13);
+            this.imgUser_telaInicial.Name = "imgUser_telaInicial";
+            this.imgUser_telaInicial.Size = new System.Drawing.Size(50, 50);
+            this.imgUser_telaInicial.TabIndex = 1;
+            this.imgUser_telaInicial.TabStop = false;
+            // 
+            // nameUser_telaInicial
+            // 
+            this.nameUser_telaInicial.AutoSize = true;
+            this.nameUser_telaInicial.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameUser_telaInicial.Location = new System.Drawing.Point(66, 38);
+            this.nameUser_telaInicial.Name = "nameUser_telaInicial";
+            this.nameUser_telaInicial.Size = new System.Drawing.Size(62, 21);
+            this.nameUser_telaInicial.TabIndex = 2;
+            this.nameUser_telaInicial.Text = "Fulano!";
             // 
             // msgBemVindo_telaInicial
             // 
@@ -261,28 +278,19 @@
             this.msgBemVindo_telaInicial.TabIndex = 3;
             this.msgBemVindo_telaInicial.Text = "Bem-vindo,";
             // 
-            // nameUser_telaInicial
+            // label1
             // 
-            this.nameUser_telaInicial.AutoSize = true;
-            this.nameUser_telaInicial.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameUser_telaInicial.Location = new System.Drawing.Point(66, 38);
-            this.nameUser_telaInicial.Name = "nameUser_telaInicial";
-            this.nameUser_telaInicial.Size = new System.Drawing.Size(62, 21);
-            this.nameUser_telaInicial.TabIndex = 2;
-            this.nameUser_telaInicial.Text = "Fulano!";
-            // 
-            // imgUser_telaInicial
-            // 
-            this.imgUser_telaInicial.Location = new System.Drawing.Point(9, 13);
-            this.imgUser_telaInicial.Name = "imgUser_telaInicial";
-            this.imgUser_telaInicial.Size = new System.Drawing.Size(50, 50);
-            this.imgUser_telaInicial.TabIndex = 1;
-            this.imgUser_telaInicial.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "_____________________________________________";
             // 
             // btnEstoqueProdutos
             // 
             this.btnEstoqueProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEstoqueProdutos.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstoqueProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoqueProdutos.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnEstoqueProdutos.Location = new System.Drawing.Point(3, 108);
             this.btnEstoqueProdutos.Name = "btnEstoqueProdutos";
@@ -306,56 +314,11 @@
             this.painelEstoqueProdutos.Size = new System.Drawing.Size(295, 136);
             this.painelEstoqueProdutos.TabIndex = 23;
             // 
-            // btnVizualizarProdutos
-            // 
-            this.btnVizualizarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVizualizarProdutos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVizualizarProdutos.Location = new System.Drawing.Point(0, 0);
-            this.btnVizualizarProdutos.Name = "btnVizualizarProdutos";
-            this.btnVizualizarProdutos.Size = new System.Drawing.Size(295, 30);
-            this.btnVizualizarProdutos.TabIndex = 0;
-            this.btnVizualizarProdutos.Text = "Vizualizar";
-            this.btnVizualizarProdutos.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastrarProdutos
-            // 
-            this.btnCadastrarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCadastrarProdutos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarProdutos.Location = new System.Drawing.Point(0, 30);
-            this.btnCadastrarProdutos.Name = "btnCadastrarProdutos";
-            this.btnCadastrarProdutos.Size = new System.Drawing.Size(295, 30);
-            this.btnCadastrarProdutos.TabIndex = 1;
-            this.btnCadastrarProdutos.TabStop = false;
-            this.btnCadastrarProdutos.Text = "Cadastrar";
-            this.btnCadastrarProdutos.UseVisualStyleBackColor = true;
-            // 
-            // btnEditarProdutos
-            // 
-            this.btnEditarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditarProdutos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarProdutos.Location = new System.Drawing.Point(0, 60);
-            this.btnEditarProdutos.Name = "btnEditarProdutos";
-            this.btnEditarProdutos.Size = new System.Drawing.Size(295, 30);
-            this.btnEditarProdutos.TabIndex = 2;
-            this.btnEditarProdutos.Text = "Editar";
-            this.btnEditarProdutos.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirProdutos
-            // 
-            this.btnExcluirProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluirProdutos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirProdutos.Location = new System.Drawing.Point(0, 90);
-            this.btnExcluirProdutos.Name = "btnExcluirProdutos";
-            this.btnExcluirProdutos.Size = new System.Drawing.Size(295, 30);
-            this.btnExcluirProdutos.TabIndex = 3;
-            this.btnExcluirProdutos.Text = "Excluir";
-            this.btnExcluirProdutos.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DimGray;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(0, 120);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(295, 10);
@@ -363,10 +326,56 @@
             this.button3.Text = "_________________________________";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // btnExcluirProdutos
+            // 
+            this.btnExcluirProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExcluirProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirProdutos.Location = new System.Drawing.Point(0, 90);
+            this.btnExcluirProdutos.Name = "btnExcluirProdutos";
+            this.btnExcluirProdutos.Size = new System.Drawing.Size(295, 30);
+            this.btnExcluirProdutos.TabIndex = 3;
+            this.btnExcluirProdutos.Text = "Excluir";
+            this.btnExcluirProdutos.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarProdutos
+            // 
+            this.btnEditarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditarProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarProdutos.Location = new System.Drawing.Point(0, 60);
+            this.btnEditarProdutos.Name = "btnEditarProdutos";
+            this.btnEditarProdutos.Size = new System.Drawing.Size(295, 30);
+            this.btnEditarProdutos.TabIndex = 2;
+            this.btnEditarProdutos.Text = "Editar";
+            this.btnEditarProdutos.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrarProdutos
+            // 
+            this.btnCadastrarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadastrarProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarProdutos.Location = new System.Drawing.Point(0, 30);
+            this.btnCadastrarProdutos.Name = "btnCadastrarProdutos";
+            this.btnCadastrarProdutos.Size = new System.Drawing.Size(295, 30);
+            this.btnCadastrarProdutos.TabIndex = 1;
+            this.btnCadastrarProdutos.TabStop = false;
+            this.btnCadastrarProdutos.Text = "Cadastrar";
+            this.btnCadastrarProdutos.UseVisualStyleBackColor = true;
+            this.btnCadastrarProdutos.Click += new System.EventHandler(this.btnCadastrarProdutos_Click);
+            // 
+            // btnVizualizarProdutos
+            // 
+            this.btnVizualizarProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVizualizarProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVizualizarProdutos.Location = new System.Drawing.Point(0, 0);
+            this.btnVizualizarProdutos.Name = "btnVizualizarProdutos";
+            this.btnVizualizarProdutos.Size = new System.Drawing.Size(295, 30);
+            this.btnVizualizarProdutos.TabIndex = 0;
+            this.btnVizualizarProdutos.Text = "Vizualizar";
+            this.btnVizualizarProdutos.UseVisualStyleBackColor = true;
+            // 
             // btnMenuFuncionarios
             // 
             this.btnMenuFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMenuFuncionarios.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuFuncionarios.Image = global::SeoPimenta.Properties.Resources.minimaze;
             this.btnMenuFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuFuncionarios.Location = new System.Drawing.Point(3, 284);
@@ -395,21 +404,89 @@
             this.painelMenuFuncionarios.Size = new System.Drawing.Size(295, 253);
             this.painelMenuFuncionarios.TabIndex = 25;
             // 
-            // btnVizualizarFuncionarios
+            // button1
             // 
-            this.btnVizualizarFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVizualizarFuncionarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVizualizarFuncionarios.Location = new System.Drawing.Point(0, 0);
-            this.btnVizualizarFuncionarios.Name = "btnVizualizarFuncionarios";
-            this.btnVizualizarFuncionarios.Size = new System.Drawing.Size(295, 30);
-            this.btnVizualizarFuncionarios.TabIndex = 0;
-            this.btnVizualizarFuncionarios.Text = "Vizualizar Funcionários";
-            this.btnVizualizarFuncionarios.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 240);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(295, 10);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "_________________________________";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnExcluirUsuarios
+            // 
+            this.btnExcluirUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExcluirUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirUsuarios.Location = new System.Drawing.Point(0, 210);
+            this.btnExcluirUsuarios.Name = "btnExcluirUsuarios";
+            this.btnExcluirUsuarios.Size = new System.Drawing.Size(295, 30);
+            this.btnExcluirUsuarios.TabIndex = 7;
+            this.btnExcluirUsuarios.Text = "Excluir Usuários";
+            this.btnExcluirUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarUsuarios
+            // 
+            this.btnEditarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarUsuarios.Location = new System.Drawing.Point(0, 180);
+            this.btnEditarUsuarios.Name = "btnEditarUsuarios";
+            this.btnEditarUsuarios.Size = new System.Drawing.Size(295, 30);
+            this.btnEditarUsuarios.TabIndex = 6;
+            this.btnEditarUsuarios.Text = "Editar Usuários";
+            this.btnEditarUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrarUsuarios
+            // 
+            this.btnCadastrarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadastrarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarUsuarios.Location = new System.Drawing.Point(0, 150);
+            this.btnCadastrarUsuarios.Name = "btnCadastrarUsuarios";
+            this.btnCadastrarUsuarios.Size = new System.Drawing.Size(295, 30);
+            this.btnCadastrarUsuarios.TabIndex = 5;
+            this.btnCadastrarUsuarios.TabStop = false;
+            this.btnCadastrarUsuarios.Text = "Cadastrar Usuários";
+            this.btnCadastrarUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnVizualizarUsuarios
+            // 
+            this.btnVizualizarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVizualizarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVizualizarUsuarios.Location = new System.Drawing.Point(0, 120);
+            this.btnVizualizarUsuarios.Name = "btnVizualizarUsuarios";
+            this.btnVizualizarUsuarios.Size = new System.Drawing.Size(295, 30);
+            this.btnVizualizarUsuarios.TabIndex = 4;
+            this.btnVizualizarUsuarios.Text = "Vizualizar Usuários";
+            this.btnVizualizarUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluirFuncionarios
+            // 
+            this.btnExcluirFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExcluirFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirFuncionarios.Location = new System.Drawing.Point(0, 90);
+            this.btnExcluirFuncionarios.Name = "btnExcluirFuncionarios";
+            this.btnExcluirFuncionarios.Size = new System.Drawing.Size(295, 30);
+            this.btnExcluirFuncionarios.TabIndex = 3;
+            this.btnExcluirFuncionarios.Text = "Excluir Funcionários";
+            this.btnExcluirFuncionarios.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarFuncionarios
+            // 
+            this.btnEditarFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditarFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarFuncionarios.Location = new System.Drawing.Point(0, 60);
+            this.btnEditarFuncionarios.Name = "btnEditarFuncionarios";
+            this.btnEditarFuncionarios.Size = new System.Drawing.Size(295, 30);
+            this.btnEditarFuncionarios.TabIndex = 2;
+            this.btnEditarFuncionarios.Text = "Editar Funcionários";
+            this.btnEditarFuncionarios.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarFuncionarios
             // 
             this.btnCadastrarFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCadastrarFuncionarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarFuncionarios.Location = new System.Drawing.Point(0, 30);
             this.btnCadastrarFuncionarios.Name = "btnCadastrarFuncionarios";
             this.btnCadastrarFuncionarios.Size = new System.Drawing.Size(295, 30);
@@ -419,89 +496,21 @@
             this.btnCadastrarFuncionarios.UseVisualStyleBackColor = true;
             this.btnCadastrarFuncionarios.Click += new System.EventHandler(this.btnCadastrarFuncionarios_Click_1);
             // 
-            // btnEditarFuncionarios
+            // btnVizualizarFuncionarios
             // 
-            this.btnEditarFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditarFuncionarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFuncionarios.Location = new System.Drawing.Point(0, 60);
-            this.btnEditarFuncionarios.Name = "btnEditarFuncionarios";
-            this.btnEditarFuncionarios.Size = new System.Drawing.Size(295, 30);
-            this.btnEditarFuncionarios.TabIndex = 2;
-            this.btnEditarFuncionarios.Text = "Editar Funcionários";
-            this.btnEditarFuncionarios.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirFuncionarios
-            // 
-            this.btnExcluirFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluirFuncionarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirFuncionarios.Location = new System.Drawing.Point(0, 90);
-            this.btnExcluirFuncionarios.Name = "btnExcluirFuncionarios";
-            this.btnExcluirFuncionarios.Size = new System.Drawing.Size(295, 30);
-            this.btnExcluirFuncionarios.TabIndex = 3;
-            this.btnExcluirFuncionarios.Text = "Excluir Funcionários";
-            this.btnExcluirFuncionarios.UseVisualStyleBackColor = true;
-            // 
-            // btnVizualizarUsuarios
-            // 
-            this.btnVizualizarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVizualizarUsuarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVizualizarUsuarios.Location = new System.Drawing.Point(0, 120);
-            this.btnVizualizarUsuarios.Name = "btnVizualizarUsuarios";
-            this.btnVizualizarUsuarios.Size = new System.Drawing.Size(295, 30);
-            this.btnVizualizarUsuarios.TabIndex = 4;
-            this.btnVizualizarUsuarios.Text = "Vizualizar Usuários";
-            this.btnVizualizarUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastrarUsuarios
-            // 
-            this.btnCadastrarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCadastrarUsuarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarUsuarios.Location = new System.Drawing.Point(0, 150);
-            this.btnCadastrarUsuarios.Name = "btnCadastrarUsuarios";
-            this.btnCadastrarUsuarios.Size = new System.Drawing.Size(295, 30);
-            this.btnCadastrarUsuarios.TabIndex = 5;
-            this.btnCadastrarUsuarios.TabStop = false;
-            this.btnCadastrarUsuarios.Text = "Cadastrar Usuários";
-            this.btnCadastrarUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // btnEditarUsuarios
-            // 
-            this.btnEditarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditarUsuarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarUsuarios.Location = new System.Drawing.Point(0, 180);
-            this.btnEditarUsuarios.Name = "btnEditarUsuarios";
-            this.btnEditarUsuarios.Size = new System.Drawing.Size(295, 30);
-            this.btnEditarUsuarios.TabIndex = 6;
-            this.btnEditarUsuarios.Text = "Editar Usuários";
-            this.btnEditarUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirUsuarios
-            // 
-            this.btnExcluirUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluirUsuarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirUsuarios.Location = new System.Drawing.Point(0, 210);
-            this.btnExcluirUsuarios.Name = "btnExcluirUsuarios";
-            this.btnExcluirUsuarios.Size = new System.Drawing.Size(295, 30);
-            this.btnExcluirUsuarios.TabIndex = 7;
-            this.btnExcluirUsuarios.Text = "Excluir Usuários";
-            this.btnExcluirUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 10);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "_________________________________";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnVizualizarFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVizualizarFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVizualizarFuncionarios.Location = new System.Drawing.Point(0, 0);
+            this.btnVizualizarFuncionarios.Name = "btnVizualizarFuncionarios";
+            this.btnVizualizarFuncionarios.Size = new System.Drawing.Size(295, 30);
+            this.btnVizualizarFuncionarios.TabIndex = 0;
+            this.btnVizualizarFuncionarios.Text = "Vizualizar Funcionários";
+            this.btnVizualizarFuncionarios.UseVisualStyleBackColor = true;
             // 
             // btnMenuFornecedores
             // 
             this.btnMenuFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMenuFornecedores.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuFornecedores.Image = global::SeoPimenta.Properties.Resources.maximaze;
             this.btnMenuFornecedores.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnMenuFornecedores.Location = new System.Drawing.Point(3, 577);
@@ -526,21 +535,44 @@
             this.painelMenuFornecedores.Size = new System.Drawing.Size(295, 147);
             this.painelMenuFornecedores.TabIndex = 27;
             // 
-            // btnVizualizarFornecedores
+            // button4
             // 
-            this.btnVizualizarFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVizualizarFornecedores.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVizualizarFornecedores.Location = new System.Drawing.Point(0, 0);
-            this.btnVizualizarFornecedores.Name = "btnVizualizarFornecedores";
-            this.btnVizualizarFornecedores.Size = new System.Drawing.Size(295, 30);
-            this.btnVizualizarFornecedores.TabIndex = 0;
-            this.btnVizualizarFornecedores.Text = "Vizualizar";
-            this.btnVizualizarFornecedores.UseVisualStyleBackColor = true;
+            this.button4.BackColor = System.Drawing.Color.DimGray;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(0, 120);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(295, 10);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "_________________________________";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(0, 90);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(295, 30);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Excluir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarFornecedores
+            // 
+            this.btnEditarFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditarFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarFornecedores.Location = new System.Drawing.Point(0, 60);
+            this.btnEditarFornecedores.Name = "btnEditarFornecedores";
+            this.btnEditarFornecedores.Size = new System.Drawing.Size(295, 30);
+            this.btnEditarFornecedores.TabIndex = 2;
+            this.btnEditarFornecedores.Text = "Editar";
+            this.btnEditarFornecedores.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarFornecedores
             // 
             this.btnCadastrarFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCadastrarFornecedores.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarFornecedores.Location = new System.Drawing.Point(0, 30);
             this.btnCadastrarFornecedores.Name = "btnCadastrarFornecedores";
             this.btnCadastrarFornecedores.Size = new System.Drawing.Size(295, 30);
@@ -549,39 +581,16 @@
             this.btnCadastrarFornecedores.Text = "Cadastrar";
             this.btnCadastrarFornecedores.UseVisualStyleBackColor = true;
             // 
-            // btnEditarFornecedores
+            // btnVizualizarFornecedores
             // 
-            this.btnEditarFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditarFornecedores.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFornecedores.Location = new System.Drawing.Point(0, 60);
-            this.btnEditarFornecedores.Name = "btnEditarFornecedores";
-            this.btnEditarFornecedores.Size = new System.Drawing.Size(295, 30);
-            this.btnEditarFornecedores.TabIndex = 2;
-            this.btnEditarFornecedores.Text = "Editar";
-            this.btnEditarFornecedores.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(295, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Excluir";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DimGray;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(295, 10);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "_________________________________";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnVizualizarFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVizualizarFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVizualizarFornecedores.Location = new System.Drawing.Point(0, 0);
+            this.btnVizualizarFornecedores.Name = "btnVizualizarFornecedores";
+            this.btnVizualizarFornecedores.Size = new System.Drawing.Size(295, 30);
+            this.btnVizualizarFornecedores.TabIndex = 0;
+            this.btnVizualizarFornecedores.Text = "Vizualizar";
+            this.btnVizualizarFornecedores.UseVisualStyleBackColor = true;
             // 
             // navBar_telaInicial
             // 
@@ -601,14 +610,6 @@
             this.navBar_telaInicial.TabStop = false;
             this.navBar_telaInicial.Enter += new System.EventHandler(this.navBar_telaInicial_Enter);
             // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Location = new System.Drawing.Point(657, 113);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 460);
-            this.panel3.TabIndex = 21;
-            // 
             // telaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,14 +626,14 @@
             this.Load += new System.EventHandler(this.telaInicial_Load);
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFuncionario_telaInicial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFornecedor_telaInicial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconProduto_telaInicial)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFuncionario_telaInicial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFornecedor_telaInicial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProduto_telaInicial)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser_telaInicial)).EndInit();
