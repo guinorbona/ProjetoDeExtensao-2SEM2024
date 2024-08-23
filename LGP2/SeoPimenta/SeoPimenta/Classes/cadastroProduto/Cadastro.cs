@@ -11,6 +11,8 @@ namespace SeoPimenta.Classes.cadastroProduto
     public class Cadastro
     {
         private string connectionStr;
+        private string sql;
+        private ConexaoBanco con = new ConexaoBanco();
 
         //-------------------------------------------------------------------------
 
@@ -28,23 +30,14 @@ namespace SeoPimenta.Classes.cadastroProduto
 
             try
             {
-                //tenta criar uma conexão com o banco
-                connectionBD = new MySqlConnection(connectionStr);
 
-                //abre a conexão com o banco
-                connectionBD.Open();
-
-                // Executa um comando INSERT para inserir um registro na tabela 'Funcionario'
-                // Como o INSERT não retorna valores, devemos executar o comando 'ExecuteNonQuery'
-                cmdInsert = new MySqlCommand();
-
-                //atribui uma conexão ao comando (obrigatório)
-                cmdInsert.Connection = connectionBD;
-
-                //seta o comando sql que será executado
-                cmdInsert.CommandText = "INSERT INTO produto (id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria)" +
+                con.abrirConexao();
+         
+                sql = "INSERT INTO produto (id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria)" +
                                     "VALUES (@id, @nome, @descricao, @imagem, @valor_compra, @valor_venda, @id_unidade_medida, @id_categoria, @id_subcategoria)";
 
+                cmdInsert = con.consulta(sql);
+              
                 //seta os parametros que deverão ser passados para a consulta sql
                 cmdInsert.Parameters.AddWithValue("id", Produto.getId());
                 cmdInsert.Parameters.AddWithValue("nome", Produto.getNome());
@@ -126,7 +119,7 @@ namespace SeoPimenta.Classes.cadastroProduto
                     byte[] imagem = (byte[])reader["imagem"];
                     double valor_compra = reader.GetDouble(4);
                     double valor_venda = reader.GetDouble(5);
-                    string id_unidade_medida = reader.GetString(6);
+                    int id_unidade_medida = reader.GetInt32(6);
                     int id_categoria = reader.GetInt32(7);
                     int id_subcategoria = reader.GetInt32(8);
 

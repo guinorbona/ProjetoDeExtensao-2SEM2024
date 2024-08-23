@@ -30,12 +30,9 @@
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txbUM = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txbDescricao = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txbSubCategoria = new System.Windows.Forms.TextBox();
-            this.txbCategoria = new System.Windows.Forms.TextBox();
             this.txbValorVenda = new System.Windows.Forms.TextBox();
             this.txbValorCompra = new System.Windows.Forms.TextBox();
             this.txbId = new System.Windows.Forms.TextBox();
@@ -47,6 +44,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.image = new System.Windows.Forms.PictureBox();
+            this.cb_UM = new System.Windows.Forms.ComboBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.cb_SubCat = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,14 +68,6 @@
             this.btnCancelar.TabIndex = 65;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // txbUM
-            // 
-            this.txbUM.Location = new System.Drawing.Point(304, 43);
-            this.txbUM.Margin = new System.Windows.Forms.Padding(2);
-            this.txbUM.Name = "txbUM";
-            this.txbUM.Size = new System.Drawing.Size(120, 20);
-            this.txbUM.TabIndex = 64;
             // 
             // label9
             // 
@@ -103,22 +95,6 @@
             this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 60;
             this.label8.Text = "Descrição:";
-            // 
-            // txbSubCategoria
-            // 
-            this.txbSubCategoria.Location = new System.Drawing.Point(97, 164);
-            this.txbSubCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.txbSubCategoria.Name = "txbSubCategoria";
-            this.txbSubCategoria.Size = new System.Drawing.Size(120, 20);
-            this.txbSubCategoria.TabIndex = 59;
-            // 
-            // txbCategoria
-            // 
-            this.txbCategoria.Location = new System.Drawing.Point(97, 134);
-            this.txbCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.txbCategoria.Name = "txbCategoria";
-            this.txbCategoria.Size = new System.Drawing.Size(120, 20);
-            this.txbCategoria.TabIndex = 58;
             // 
             // txbValorVenda
             // 
@@ -224,20 +200,44 @@
             this.image.TabStop = false;
             this.image.Click += new System.EventHandler(this.image_Click);
             // 
+            // cb_UM
+            // 
+            this.cb_UM.FormattingEnabled = true;
+            this.cb_UM.Location = new System.Drawing.Point(308, 43);
+            this.cb_UM.Name = "cb_UM";
+            this.cb_UM.Size = new System.Drawing.Size(116, 21);
+            this.cb_UM.TabIndex = 67;
+            // 
+            // cbCategoria
+            // 
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Location = new System.Drawing.Point(97, 133);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(120, 21);
+            this.cbCategoria.TabIndex = 68;
+            // 
+            // cb_SubCat
+            // 
+            this.cb_SubCat.FormattingEnabled = true;
+            this.cb_SubCat.Location = new System.Drawing.Point(97, 163);
+            this.cb_SubCat.Name = "cb_SubCat";
+            this.cb_SubCat.Size = new System.Drawing.Size(120, 21);
+            this.cb_SubCat.TabIndex = 69;
+            // 
             // TelaCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 263);
+            this.Controls.Add(this.cb_SubCat);
+            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cb_UM);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txbUM);
             this.Controls.Add(this.image);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txbDescricao);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txbSubCategoria);
-            this.Controls.Add(this.txbCategoria);
             this.Controls.Add(this.txbValorVenda);
             this.Controls.Add(this.txbValorCompra);
             this.Controls.Add(this.txbId);
@@ -250,6 +250,7 @@
             this.Controls.Add(this.label14);
             this.Name = "TelaCadastroProduto";
             this.Text = "TelaCadastroProduto";
+            this.Load += new System.EventHandler(this.TelaCadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,13 +261,10 @@
 
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txbUM;
         private System.Windows.Forms.PictureBox image;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txbDescricao;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txbSubCategoria;
-        private System.Windows.Forms.TextBox txbCategoria;
         private System.Windows.Forms.TextBox txbValorVenda;
         private System.Windows.Forms.TextBox txbValorCompra;
         private System.Windows.Forms.TextBox txbId;
@@ -277,5 +275,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cb_UM;
+        private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.ComboBox cb_SubCat;
     }
 }

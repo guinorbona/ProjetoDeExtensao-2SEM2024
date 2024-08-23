@@ -14,12 +14,12 @@ namespace SeoPimenta.Classes.cadastroProduto
         private double valor_compra;
         private double valor_venda;
         private int id;
-        private string id_unidade_medida;
+        private int id_unidade_medida;
         private int id_categoria;
         private int id_subcategoria;
 
         public Produto(int id, string nome, string descricao, byte[] imagem, double valor_compra,
-                        double valor_venda, string id_unidade_medida, int id_categoria, int id_subcategoria)
+                        double valor_venda, int id_unidade_medida, int id_categoria, int id_subcategoria)
         {
 
             this.id = id;
@@ -37,7 +37,7 @@ namespace SeoPimenta.Classes.cadastroProduto
         public string getNome() { return nome; }
         public string getDescricao() { return descricao; }
         public int getId() { return id; }
-        public string getId_unidade_medida() { return id_unidade_medida; }
+        public int getId_unidade_medida() { return id_unidade_medida; }
         public int getId_categoria() { return id_categoria; }
         public int getId_Subcategoria() { return id_subcategoria; }
         public double getValor_compra() { return valor_compra; }

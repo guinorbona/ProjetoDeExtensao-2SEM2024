@@ -371,6 +371,7 @@
             this.btnVizualizarProdutos.TabIndex = 0;
             this.btnVizualizarProdutos.Text = "Vizualizar";
             this.btnVizualizarProdutos.UseVisualStyleBackColor = true;
+            this.btnVizualizarProdutos.Click += new System.EventHandler(this.btnVizualizarProdutos_Click);
             // 
             // btnMenuFuncionarios
             // 
@@ -603,9 +604,9 @@
             this.navBar_telaInicial.Controls.Add(this.btnEstoqueProdutos);
             this.navBar_telaInicial.Controls.Add(this.panel2);
             this.navBar_telaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.navBar_telaInicial.Location = new System.Drawing.Point(0, 51);
+            this.navBar_telaInicial.Location = new System.Drawing.Point(0, 46);
             this.navBar_telaInicial.Name = "navBar_telaInicial";
-            this.navBar_telaInicial.Size = new System.Drawing.Size(301, 672);
+            this.navBar_telaInicial.Size = new System.Drawing.Size(301, 677);
             this.navBar_telaInicial.TabIndex = 0;
             this.navBar_telaInicial.TabStop = false;
             this.navBar_telaInicial.Enter += new System.EventHandler(this.navBar_telaInicial_Enter);

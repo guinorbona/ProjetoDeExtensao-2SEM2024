@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
@@ -16,7 +17,7 @@ namespace SeoPimenta.Classes
         public string data_source = @"server=localhost;
                               port=3306;
                               uid=root;
-                              pwd=1234;database=seopimenta;
+                              pwd=ifsp;database=seopimenta;
                               ConnectionTimeout=1";
         public MySqlConnection Connection;
         public MySqlCommand cmd;
@@ -60,8 +61,38 @@ namespace SeoPimenta.Classes
             if (Connection != null && Connection.State == ConnectionState.Open)
             {
                 Connection.Close();
+                Connection.Dispose();
+                Connection.ClearAllPoolsAsync();
             }
         }
+
+
+
+        public void CarregarCB(ComboBox nome ,string dado, string sql)
+        {
+            
+            MySqlCommand cmd;
+
+            abrirConexao();
+
+
+            try
+            {
+                cmd = consulta(sql);
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da.SelectCommand = cmd;
+                DataTable table = new DataTable();
+                da.Fill(table);
+                nome.DataSource = table;
+                nome.DisplayMember = dado;
+                fecharConexao();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
 
     }
 }

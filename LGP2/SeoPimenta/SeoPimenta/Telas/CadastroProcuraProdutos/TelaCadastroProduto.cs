@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
+using SeoPimenta.Classes;
 using SeoPimenta.Classes.cadastroProduto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -12,17 +14,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
+
+
+/*
+ ===========================================================================================================================================================
+        ERRO LINHA 115 - tenho que colocar o else como 1 pois senão dá erro e crasha o programa
+ */
+
+
 namespace SeoPimenta.Telas.Cadastro_produto
 {
     public partial class TelaCadastroProduto : Form
     {
+        private ConexaoBanco con = new ConexaoBanco();
         private Cadastro cadastro;
-        private Produto produto;
         private string foto;
 
         public TelaCadastroProduto(Cadastro cadastro)
         {
             InitializeComponent();
+            this.cadastro = cadastro;
             
         }
 
@@ -33,9 +44,8 @@ namespace SeoPimenta.Telas.Cadastro_produto
             txbNome.Clear();
             txbId.Clear();
             txbDescricao.Clear();
-            txbCategoria.Clear();
-            txbSubCategoria.Clear();
-            txbUM.Clear();
+
+            
             txbValorCompra.Clear();
             txbValorVenda.Clear();
         }
@@ -58,27 +68,40 @@ namespace SeoPimenta.Telas.Cadastro_produto
             }
 
 
-            //pega e valida os dados do textbox
-            string id_unidade_medida = txbUM.Text.Trim();
 
-            if (id_unidade_medida == "")
+            //pega e valida os dados do textbox
+            int id_unidade_medida;
+
+            try
             {
-                Ferramentas.mostraErroTextBox(txbNome, "Insira um valor para o campo \"Nome\"");
+                if (cb_UM.Text.Equals("ml"))
+                {
+                    id_unidade_medida = 1;
+                }
+                else
+                {
+                    id_unidade_medida = 0;
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor para o campo \" unidade de medida\"");
                 return;
             }
 
+
             string descricao = txbDescricao.Text.Trim();
 
-            if (id_unidade_medida == "")
+            if (descricao == "")
             {
-                Ferramentas.mostraErroTextBox(txbNome, "Insira um valor para o campo \"Nome\"");
+                Ferramentas.mostraErroTextBox(txbNome, "Insira um valor para o campo \"Descrição\"");
                 return;
             }
             byte[] imagem = img();
 
             if (imagem == null || imagem.Length == 0)
             {
-                Ferramentas.mostraErroPictureBox(image, "Insira um valor para o campo \"Nome\"");
+                Ferramentas.mostraErroPictureBox(image, "Insira um valor para o campo \"Imagem\"");
                 return;
             }
 
@@ -94,26 +117,52 @@ namespace SeoPimenta.Telas.Cadastro_produto
                 Ferramentas.mostraErroTextBox(txbId, "Insira um valor para o campo \"Id\"");
                 return;
             }
+           
+
+            //=================================================================================================================================================================
+            // está dando erro em id_ categofia concertar mais tarde 
 
             int id_categoria;
             try
             {
-                id_categoria = int.Parse(txbId.Text.Trim());
+                if(cbCategoria.Text.Equals("fruta"))
+                {
+                    id_categoria = 1;
+                }
+                if (cbCategoria.Text.Equals("suco"))
+                {
+                    id_categoria = 2;
+                }
+                else
+                {
+                    id_categoria = 1;
+                }
             }
             catch (FormatException)
             {
-                Ferramentas.mostraErroTextBox(txbCategoria, "Insira um valor para o campo \"Id Categoria\"");
+                MessageBox.Show( "Insira um valor para o campo \"Id Categoria\"");
                 return;
             }
 
             int id_subcategoria;
             try
             {
-                id_subcategoria = int.Parse(txbId.Text.Trim());
+                if( cb_SubCat.Text.Equals("fruta"))
+                {
+                    id_subcategoria = 1;
+                }
+                if (cb_SubCat.Text.Equals("suco"))
+                {
+                    id_subcategoria = 2;
+                }
+                else
+                {
+                    id_subcategoria = 0;
+                }
             }
             catch (FormatException)
             {
-                Ferramentas.mostraErroTextBox(txbSubCategoria, "Insira um valor para o campo \"Id Sub Categoria\"");
+                MessageBox.Show("Insira um valor para o campo \"Id Sub Categoria\"");
                 return;
             }
 
@@ -143,7 +192,7 @@ namespace SeoPimenta.Telas.Cadastro_produto
             try
             {
                 //cria um objeto funcionário com os dados dos textbox
-                 produto = new Produto(id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
+                 Produto produto = new Produto(id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
 
                 //cadastra o funcionario no banco
                 cadastro.inserirProduto(produto);
@@ -224,6 +273,32 @@ namespace SeoPimenta.Telas.Cadastro_produto
         }
 
 
+
+
+
+
+        private void preencheCBUnidadeMedida()
+        {
+            string sql;
+            sql = "SELECT id, nome FROM undmedida ORDER BY id asc";
+            con.CarregarCB(cb_UM, "nome", sql);
+        }
+
+        private void preencheCBCat()
+        {
+            string sql;
+            sql = "SELECT id, nome FROM categoria ORDER BY id asc";
+            con.CarregarCB(cbCategoria, "nome", sql);
+            con.CarregarCB(cb_SubCat, "nome", sql);
+        }
+
+
+
+        private void TelaCadastroProduto_Load(object sender, EventArgs e)
+        {
+            preencheCBUnidadeMedida();
+            preencheCBCat();
+        }
     }
 }
 

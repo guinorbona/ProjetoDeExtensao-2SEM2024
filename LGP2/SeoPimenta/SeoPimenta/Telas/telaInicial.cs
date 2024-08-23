@@ -13,14 +13,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using SeoPimenta.Telas.CadastroProcuraProdutos;
 
 namespace SeoPimenta
 {
     public partial class telaInicial : Form
     {
 
-        Cadastro cadastro;
-
+        private Cadastro cadastro;
         private telaLogin telaLogin;
         public telaInicial()
         {
@@ -76,7 +76,7 @@ namespace SeoPimenta
 
         private void telaInicial_Load(object sender, EventArgs e)
         {
-
+            cadastro = new Cadastro();
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
@@ -166,6 +166,11 @@ namespace SeoPimenta
         private void btnCadastrarProdutos_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new TelaCadastroProduto(cadastro));
+        }
+
+        private void btnVizualizarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaListarProdutos());
         }
     }
 }
