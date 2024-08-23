@@ -1,4 +1,7 @@
-﻿using SeoPimenta.Telas.menuFuncionarioUsuario;
+﻿
+using SeoPimenta.Classes.cadastroProduto;
+using SeoPimenta.Telas.menuFuncionarioUsuario;
+using SeoPimenta.Telas.Cadastro_produto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,16 +13,19 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using SeoPimenta.Telas.CadastroProcuraProdutos;
 
 namespace SeoPimenta
 {
     public partial class telaInicial : Form
     {
 
+        private Cadastro cadastro;
         private telaLogin telaLogin;
         public telaInicial()
         {
             InitializeComponent();
+            Cadastro cadastro = new Cadastro();
         }
         public telaInicial(telaLogin telaLogin)
         {
@@ -70,7 +76,7 @@ namespace SeoPimenta
 
         private void telaInicial_Load(object sender, EventArgs e)
         {
-
+            cadastro = new Cadastro();
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
@@ -155,6 +161,16 @@ namespace SeoPimenta
         private void btn_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(painelMenuFornecedores);
+        }
+
+        private void btnCadastrarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaCadastroProduto(cadastro));
+        }
+
+        private void btnVizualizarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaListarProdutos());
         }
     }
 }

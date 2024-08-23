@@ -99,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BuscaEndereco.cs" />
+    <Compile Include="Classes\cadastroProduto\Cadastro.cs" />
+    <Compile Include="Classes\cadastroProduto\Ferramentas.cs" />
+    <Compile Include="Classes\cadastroProduto\Produto.cs" />
     <Compile Include="Classes\ConexaoBanco.cs" />
     <Compile Include="Classes\Endereco.cs" />
     <Compile Include="Classes\Login.cs" />
@@ -117,6 +120,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaCadastroProduto.Designer.cs">
+      <DependentUpon>TelaCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaListarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaListarProdutos.Designer.cs">
+      <DependentUpon>TelaListarProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\estoqueProduto\cadastrarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +250,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\CadastroProcuraProdutos\TelaCadastroProduto.resx">
+      <DependentUpon>TelaCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroProcuraProdutos\TelaListarProdutos.resx">
+      <DependentUpon>TelaListarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\estoqueProduto\cadastrarProduto.resx">
       <DependentUpon>cadastrarProduto.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\userpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem-foto_prod.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
