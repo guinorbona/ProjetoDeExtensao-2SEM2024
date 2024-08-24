@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.btncerrar = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.CausesValidation = false;
+            this.panel1.Controls.Add(this.splitter1);
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.txtSenha);
@@ -57,51 +59,9 @@
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(831, 344);
+            this.panel1.Size = new System.Drawing.Size(834, 343);
             this.panel1.TabIndex = 0;
-          
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.BackColor = System.Drawing.Color.White;
-            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSenha.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.ForeColor = System.Drawing.Color.Black;
-            this.txtSenha.Location = new System.Drawing.Point(432, 145);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(273, 35);
-            this.txtSenha.TabIndex = 61;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(428, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 21);
-            this.label5.TabIndex = 60;
-            this.label5.Text = "Senha";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtUsuario.Location = new System.Drawing.Point(432, 67);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(273, 35);
-            this.txtUsuario.TabIndex = 55;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 21);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "Usuário";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnEntrar
             // 
@@ -127,15 +87,37 @@
             this.checkBox1.TabIndex = 62;
             this.checkBox1.Text = "Exibir Senha";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.BackColor = System.Drawing.Color.White;
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenha.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.ForeColor = System.Drawing.Color.Black;
+            this.txtSenha.Location = new System.Drawing.Point(432, 145);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(273, 35);
+            this.txtSenha.TabIndex = 61;
             // 
             // panelLogo
             // 
             this.panelLogo.BackgroundImage = global::SeoPimenta.Properties.Resources.logo21;
-            this.panelLogo.Location = new System.Drawing.Point(3, 0);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(346, 344);
+            this.panelLogo.Size = new System.Drawing.Size(346, 343);
             this.panelLogo.TabIndex = 0;
-          
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(428, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 21);
+            this.label5.TabIndex = 60;
+            this.label5.Text = "Senha";
             // 
             // btncerrar
             // 
@@ -150,6 +132,37 @@
             this.btncerrar.TabStop = false;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(428, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 21);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Usuário";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
+            this.txtUsuario.Location = new System.Drawing.Point(432, 67);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(273, 35);
+            this.txtUsuario.TabIndex = 55;
+            // 
+            // splitter1
+            // 
+            this.splitter1.BackColor = System.Drawing.Color.Silver;
+            this.splitter1.Location = new System.Drawing.Point(346, 0);
+            this.splitter1.MinSize = 5;
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 343);
+            this.splitter1.TabIndex = 64;
+            this.splitter1.TabStop = false;
+            // 
             // telaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,6 +176,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Green;
+            this.Load += new System.EventHandler(this.telaLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
@@ -181,6 +195,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

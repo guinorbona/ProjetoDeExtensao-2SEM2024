@@ -186,6 +186,7 @@ namespace SeoPimenta
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            // Implementação do evento quando a barra de navegação é selecionada
             this.WindowState = FormWindowState.Minimized;
         }
     }

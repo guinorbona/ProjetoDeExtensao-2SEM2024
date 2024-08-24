@@ -104,5 +104,26 @@ namespace SeoPimenta
 
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                txtSenha.PasswordChar = '\0'; // Exibe a senha
+            }
+            else
+            {
+                txtSenha.PasswordChar = '•'; // Oculta a senha
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void telaLogin_Load(object sender, EventArgs e)
+        {
+            txtSenha.PasswordChar = '•';
+        }
     }
 }
