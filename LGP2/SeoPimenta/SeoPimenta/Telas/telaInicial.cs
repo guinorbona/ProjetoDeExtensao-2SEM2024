@@ -1,44 +1,51 @@
-﻿using SeoPimenta.Telas.menuFuncionarioUsuario;
+﻿using SeoPimenta.Classes;
+using SeoPimenta.Telas.menuFuncionarioUsuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace SeoPimenta
 {
     public partial class telaInicial : Form
     {
+        Usuario usuarioLogado;
+        telaLogin telaLogin;
 
-        private telaLogin telaLogin;
         public telaInicial()
         {
             InitializeComponent();
         }
-        public telaInicial(telaLogin telaLogin)
+
+        public telaInicial(telaLogin telaLogin, Usuario usuarioLogado)
         {
+            InitializeComponent(); // Chama a inicialização dos componentes
             this.telaLogin = telaLogin;
+            this.usuarioLogado = usuarioLogado;
         }
 
         private Form formularioAtivo = null;
+
         private void openChildFormInPanel(Form childForm)
         {
             if (formularioAtivo != null)
+            {
                 formularioAtivo.Close();
-                formularioAtivo = childForm;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                childForm.Dock = DockStyle.Fill;
-                panelChildForm.Controls.Add(childForm);
-                panelChildForm.Tag = childForm;
-                childForm.BringToFront();
-                childForm.Show();
+            }
+            formularioAtivo = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void escodeSubMenu()
@@ -50,46 +57,55 @@ namespace SeoPimenta
 
         private void mostrarSubMenu(Panel subMenu)
         {
-                if(subMenu.Visible == false) 
+            escodeSubMenu();
+            subMenu.Visible = !subMenu.Visible;
+        }
+
+        private void carregarImagemPerfil()
+        {
+            byte[] imagemBytes = usuarioLogado.getImagem();
+
+            if (imagemBytes != null && imagemBytes.Length > 0)
             {
-                escodeSubMenu();
-                subMenu.Visible = true;
+                try
+                {
+                    using (MemoryStream ms = new MemoryStream(imagemBytes))
+                    {
+                        imgUsuario.Image = Image.FromStream(ms);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    imgUsuario.Image = null; // Ou defina uma imagem padrão de erro
+                }
             }
-                else
-                subMenu.Visible = false;
+            else
+            {
+                imgUsuario.Image = null; // Ou defina uma imagem padrão
+            }
         }
-        private void body_telaInicial_Enter(object sender, EventArgs e)
+        private void carregarUsuario()
         {
-
+            try
+            {
+                lblName.Text = usuarioLogado.getNome() +"!";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar nome: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                imgUsuario.Image = null; // Ou defina uma imagem padrão de erro
+            }
+            carregarImagemPerfil();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void telaInicial_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void navBar_telaInicial_Enter(object sender, EventArgs e)
-        {
-
+            carregarUsuario();
         }
 
         private void btnVisualizarUser_telaFuncioUser_Click(object sender, EventArgs e)
         {
-            
             this.Close();
-
-           
         }
 
         private void txtFuncionario_telaInicial_Click(object sender, EventArgs e)
@@ -109,37 +125,32 @@ namespace SeoPimenta
 
         private void btnExcluirUsuarios_Click(object sender, EventArgs e)
         {
-
+            // Implementação do evento de exclusão de usuários
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // Implementação do evento para o botão 1
         }
 
         private void btnVizualizarFuncionarios_Click(object sender, EventArgs e)
         {
-
+            // Implementação do evento de visualização de funcionários
         }
 
         private void btnEditarUsuarios_Click(object sender, EventArgs e)
         {
-
+            // Implementação do evento de edição de usuários
         }
 
         private void btnCadastrarFuncionarios_Click(object sender, EventArgs e)
         {
-
+            // Implementação do evento de cadastro de funcionários
         }
 
         private void btnEditarFuncionarios_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnCadastrarUsuarios_Click(object sender, EventArgs e)
-        {
-
+            // Implementação do evento de edição de funcionários
         }
 
         private void btnMenuFuncionarios_Click_1(object sender, EventArgs e)
@@ -147,14 +158,29 @@ namespace SeoPimenta
             mostrarSubMenu(painelMenuFuncionarios);
         }
 
-        private void btnCadastrarFuncionarios_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(painelMenuFornecedores);
+        }
+
+        private void btnCadastrarUsuarios_Click_1(object sender, EventArgs e)
+        {
+            // Implementação do evento de cadastro de usuários
+        }
+
+        private void btnCadastrarUsuarios_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new cadastrarUser());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void navBar_telaInicial_Enter(object sender, EventArgs e)
+        {
+            // Implementação do evento quando a barra de navegação é selecionada
         }
     }
 }

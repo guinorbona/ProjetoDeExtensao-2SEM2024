@@ -324,5 +324,14 @@
   <ItemGroup>
     <None Include="Resources\userpng.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem-foto_prod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem-foto_prod1.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

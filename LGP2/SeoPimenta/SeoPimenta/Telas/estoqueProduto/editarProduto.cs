@@ -135,5 +135,9 @@ namespace SeoPimenta.Telas.estoqueProduto
             }
         }
 
+        private void editarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

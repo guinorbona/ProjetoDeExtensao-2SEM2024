@@ -113,6 +113,16 @@ namespace SeoPimenta.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo21 {
+            get {
+                object obj = ResourceManager.GetObject("logo21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximaze {
             get {
                 object obj = ResourceManager.GetObject("maximaze", resourceCulture);
@@ -126,6 +136,26 @@ namespace SeoPimenta.Properties {
         internal static System.Drawing.Bitmap minimaze {
             get {
                 object obj = ResourceManager.GetObject("minimaze", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_foto_prod {
+            get {
+                object obj = ResourceManager.GetObject("sem-foto_prod", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sem_foto_prod1 {
+            get {
+                object obj = ResourceManager.GetObject("sem-foto_prod1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

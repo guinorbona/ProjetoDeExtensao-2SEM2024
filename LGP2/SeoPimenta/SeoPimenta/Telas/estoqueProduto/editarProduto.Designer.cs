@@ -278,6 +278,7 @@
             this.Controls.Add(this.navBar_editarProduto);
             this.Name = "editarProduto";
             this.Text = "Estoque de Produtos (Editar)";
+            this.Load += new System.EventHandler(this.editarProduto_Load);
             this.navBar_editarProduto.ResumeLayout(false);
             this.navBar_editarProduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack_editarProduto)).EndInit();
