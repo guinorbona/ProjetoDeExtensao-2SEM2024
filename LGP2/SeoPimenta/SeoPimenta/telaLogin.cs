@@ -44,7 +44,7 @@ namespace SeoPimenta
                     "FROM seopimenta.usuario " +
                     "INNER JOIN seopimenta.funcionario ON usuario.id_funcionario = funcionario.id " +
                     "INNER JOIN seopimenta.endereco ON funcionario.id_endereco = endereco.id " +
-                    "WHERE usuario.usuario = @Usuario AND usuario.senha = @Senha";
+                    "WHERE usuario.usuario = @Usuario AND usuario.senha = @Senha AND usuario.disponibilidade = 1";
 
                 // Prepara o comando
                 conexao.consulta(command);

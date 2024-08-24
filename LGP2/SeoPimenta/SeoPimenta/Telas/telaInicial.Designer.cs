@@ -45,7 +45,6 @@
             this.btnVizualizarProdutos = new System.Windows.Forms.Button();
             this.painelMenuFuncionarios = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnExcluirUsuarios = new System.Windows.Forms.Button();
             this.btnEditarUsuarios = new System.Windows.Forms.Button();
             this.btnCadastrarUsuarios = new System.Windows.Forms.Button();
             this.btnVizualizarUsuarios = new System.Windows.Forms.Button();
@@ -248,7 +247,6 @@
             // 
             this.painelMenuFuncionarios.BackColor = System.Drawing.Color.DarkGray;
             this.painelMenuFuncionarios.Controls.Add(this.button1);
-            this.painelMenuFuncionarios.Controls.Add(this.btnExcluirUsuarios);
             this.painelMenuFuncionarios.Controls.Add(this.btnEditarUsuarios);
             this.painelMenuFuncionarios.Controls.Add(this.btnCadastrarUsuarios);
             this.painelMenuFuncionarios.Controls.Add(this.btnVizualizarUsuarios);
@@ -259,7 +257,7 @@
             this.painelMenuFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.painelMenuFuncionarios.Location = new System.Drawing.Point(3, 324);
             this.painelMenuFuncionarios.Name = "painelMenuFuncionarios";
-            this.painelMenuFuncionarios.Size = new System.Drawing.Size(295, 253);
+            this.painelMenuFuncionarios.Size = new System.Drawing.Size(295, 222);
             this.painelMenuFuncionarios.TabIndex = 25;
             // 
             // button1
@@ -267,23 +265,12 @@
             this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 240);
+            this.button1.Location = new System.Drawing.Point(0, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(295, 10);
             this.button1.TabIndex = 8;
             this.button1.Text = "_________________________________";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnExcluirUsuarios
-            // 
-            this.btnExcluirUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluirUsuarios.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirUsuarios.Location = new System.Drawing.Point(0, 210);
-            this.btnExcluirUsuarios.Name = "btnExcluirUsuarios";
-            this.btnExcluirUsuarios.Size = new System.Drawing.Size(295, 30);
-            this.btnExcluirUsuarios.TabIndex = 7;
-            this.btnExcluirUsuarios.Text = "Excluir Usuários";
-            this.btnExcluirUsuarios.UseVisualStyleBackColor = true;
             // 
             // btnEditarUsuarios
             // 
@@ -318,8 +305,9 @@
             this.btnVizualizarUsuarios.Name = "btnVizualizarUsuarios";
             this.btnVizualizarUsuarios.Size = new System.Drawing.Size(295, 30);
             this.btnVizualizarUsuarios.TabIndex = 4;
-            this.btnVizualizarUsuarios.Text = "Vizualizar Usuários";
+            this.btnVizualizarUsuarios.Text = "Vizualizar/Excluir Usuários";
             this.btnVizualizarUsuarios.UseVisualStyleBackColor = true;
+            this.btnVizualizarUsuarios.Click += new System.EventHandler(this.btnVizualizarUsuarios_Click);
             // 
             // btnExcluirFuncionarios
             // 
@@ -375,7 +363,7 @@
             this.painelMenuFornecedores.Controls.Add(this.btnCadastrarFornecedores);
             this.painelMenuFornecedores.Controls.Add(this.btnVizualizarFornecedores);
             this.painelMenuFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.painelMenuFornecedores.Location = new System.Drawing.Point(3, 617);
+            this.painelMenuFornecedores.Location = new System.Drawing.Point(3, 586);
             this.painelMenuFornecedores.Name = "painelMenuFornecedores";
             this.painelMenuFornecedores.Size = new System.Drawing.Size(295, 147);
             this.painelMenuFornecedores.TabIndex = 27;
@@ -515,7 +503,7 @@
             this.btnMenuFornecedores.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuFornecedores.Image = global::SeoPimenta.Properties.Resources.truck;
             this.btnMenuFornecedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuFornecedores.Location = new System.Drawing.Point(3, 577);
+            this.btnMenuFornecedores.Location = new System.Drawing.Point(3, 546);
             this.btnMenuFornecedores.Name = "btnMenuFornecedores";
             this.btnMenuFornecedores.Size = new System.Drawing.Size(295, 40);
             this.btnMenuFornecedores.TabIndex = 26;
@@ -618,7 +606,6 @@
         private System.Windows.Forms.Button btnMenuFuncionarios;
         private System.Windows.Forms.Panel painelMenuFuncionarios;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnExcluirUsuarios;
         private System.Windows.Forms.Button btnEditarUsuarios;
         private System.Windows.Forms.Button btnCadastrarUsuarios;
         private System.Windows.Forms.Button btnVizualizarUsuarios;

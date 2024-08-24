@@ -203,5 +203,32 @@ namespace SeoPimenta
             openChildFormInPanel(new editarUser(usuarioLogado));
 
         }
+
+        private void btnVizualizarUsuarios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verifica se o nível do usuário logado é 2
+                if (usuarioLogado.getNivel() != 2)
+                {
+                    // Lança uma exceção se o nível não for 2
+                    throw new UnauthorizedAccessException("Você não tem permissão para acessar esta funcionalidade.");
+                }
+
+                // Se o usuário tiver nível 2, abre o formulário de visualização
+                openChildFormInPanel(new visualizarUser());
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                // Mostra uma mensagem de erro caso o usuário não tenha o nível necessário
+                MessageBox.Show(ex.Message, "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Captura qualquer outro erro que possa ocorrer
+                MessageBox.Show("Ocorreu um erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

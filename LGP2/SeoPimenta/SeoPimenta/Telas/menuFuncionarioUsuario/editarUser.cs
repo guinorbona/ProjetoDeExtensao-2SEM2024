@@ -419,5 +419,10 @@ namespace SeoPimenta.Telas.menuFuncionarioUsuario
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
