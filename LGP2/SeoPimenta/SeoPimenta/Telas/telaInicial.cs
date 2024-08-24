@@ -139,10 +139,7 @@ namespace SeoPimenta
             // Implementação do evento de visualização de funcionários
         }
 
-        private void btnEditarUsuarios_Click(object sender, EventArgs e)
-        {
-            // Implementação do evento de edição de usuários
-        }
+     
 
         private void btnCadastrarFuncionarios_Click(object sender, EventArgs e)
         {
@@ -188,6 +185,23 @@ namespace SeoPimenta
         {
             // Implementação do evento quando a barra de navegação é selecionada
             this.WindowState = FormWindowState.Minimized;
+        }
+
+
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            if (formularioAtivo != null)
+            {
+                formularioAtivo.Close();
+                formularioAtivo = null; // Opcional: Limpa a referência para evitar problemas futuros
+            }
+        }
+
+        private void btnEditarUsuarios_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new editarUser(usuarioLogado));
+
         }
     }
 }

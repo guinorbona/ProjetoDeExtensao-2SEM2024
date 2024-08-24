@@ -220,10 +220,7 @@ namespace SeoPimenta.Telas.menuFuncionarioUsuario
             {
                 Application.Run(new cadastrarUser());
             }
-            if (status == 9)
-            {
-                Application.Run(new editarUser());
-            }
+         
         }
     }
 }

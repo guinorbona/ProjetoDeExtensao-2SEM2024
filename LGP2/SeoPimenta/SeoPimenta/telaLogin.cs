@@ -39,7 +39,7 @@ namespace SeoPimenta
                 string senhahash = usuario.GerarHashSHA256(txtSenha.Text);
 
                 // Comando SQL
-                string command = "SELECT usuario.nivel, usuario.usuario, usuario.senha,usuario.imagem, funcionario.id AS funcionario_id,funcionario.nome, funcionario.cpf, " +
+                string command = "SELECT usuario.id,usuario.nivel, usuario.usuario, usuario.senha,usuario.imagem, funcionario.id AS funcionario_id,funcionario.nome, funcionario.cpf, " +
                     "endereco.logradouro, endereco.numero, endereco.bairro, endereco.cidade, endereco.estado, endereco.cep " +
                     "FROM seopimenta.usuario " +
                     "INNER JOIN seopimenta.funcionario ON usuario.id_funcionario = funcionario.id " +
@@ -57,7 +57,7 @@ namespace SeoPimenta
                     if (leitor.HasRows && leitor.Read())
                     {
                         // Utiliza Convert.ToInt32 e Convert.ToString para garantir conversões seguras
-                        usuario.setUsuarioID(leitor.GetInt32(0));
+                        usuario.setUsuarioID(Convert.ToInt32(leitor["id"]));
                         usuario.setNome((Convert.ToString(leitor["nome"])));
                         usuario.setNivel(Convert.ToInt32(leitor["nivel"]));
                         usuario.setEmail(Convert.ToString(leitor["usuario"])); // Certifique-se de que isso é correto

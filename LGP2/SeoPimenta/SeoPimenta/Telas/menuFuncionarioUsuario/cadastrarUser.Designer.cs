@@ -30,7 +30,6 @@
         {
             this.body_cadastrarUser = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageCadastro = new System.Windows.Forms.PictureBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -43,6 +42,7 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.imageCadastro = new System.Windows.Forms.PictureBox();
             this.body_cadastrarUser.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageCadastro)).BeginInit();
@@ -80,18 +80,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(864, 503);
             this.panel1.TabIndex = 1;
-            // 
-            // imageCadastro
-            // 
-            this.imageCadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageCadastro.Image = global::SeoPimenta.Properties.Resources.sem_foto_prod1;
-            this.imageCadastro.Location = new System.Drawing.Point(546, 58);
-            this.imageCadastro.Name = "imageCadastro";
-            this.imageCadastro.Size = new System.Drawing.Size(227, 271);
-            this.imageCadastro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageCadastro.TabIndex = 64;
-            this.imageCadastro.TabStop = false;
-            this.imageCadastro.Click += new System.EventHandler(this.image_Click);
             // 
             // btnCadastrar
             // 
@@ -216,12 +204,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(397, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 25);
+            this.label1.Size = new System.Drawing.Size(216, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de  Usuário";
+            // 
+            // imageCadastro
+            // 
+            this.imageCadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imageCadastro.Image = global::SeoPimenta.Properties.Resources.sem_foto_prod1;
+            this.imageCadastro.Location = new System.Drawing.Point(546, 58);
+            this.imageCadastro.Name = "imageCadastro";
+            this.imageCadastro.Size = new System.Drawing.Size(227, 271);
+            this.imageCadastro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageCadastro.TabIndex = 64;
+            this.imageCadastro.TabStop = false;
+            this.imageCadastro.Click += new System.EventHandler(this.image_Click);
             // 
             // cadastrarUser
             // 
