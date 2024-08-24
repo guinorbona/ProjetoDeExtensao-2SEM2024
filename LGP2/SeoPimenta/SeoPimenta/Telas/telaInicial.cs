@@ -100,6 +100,7 @@ namespace SeoPimenta
         }
         private void telaInicial_Load(object sender, EventArgs e)
         {
+            escodeSubMenu();
             carregarUsuario();
         }
 
@@ -181,6 +182,11 @@ namespace SeoPimenta
         private void navBar_telaInicial_Enter(object sender, EventArgs e)
         {
             // Implementação do evento quando a barra de navegação é selecionada
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
