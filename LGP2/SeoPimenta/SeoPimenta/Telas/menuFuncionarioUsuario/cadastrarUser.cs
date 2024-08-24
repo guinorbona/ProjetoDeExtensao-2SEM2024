@@ -171,68 +171,93 @@ namespace SeoPimenta.Telas.menuFuncionarioUsuario
             // Cria uma instância da classe Usuario
             Usuario usuarioCadastro = new Usuario();
 
-            // Define as propriedades do usuário
-            usuarioCadastro.setEmail(txtUsuario.Text);
-            usuarioCadastro.setNivel(Convert.ToInt32(cbbNivel.SelectedItem.ToString()));
-            usuarioCadastro.setSenha(txtSenha.Text);
-            int idFuncionario = Convert.ToInt32(cbbFuncionario.SelectedValue);
-
-            // Gera o hash da senha
-            string hashSenha = usuarioCadastro.GerarHashSHA256(usuarioCadastro.getSenha());
-
-            // Carrega a imagem selecionada em um array de bytes
-            byte[] imagemBytes = null;
-
-            imagemBytes = GetImageCadastro();
-
-
-
-            var conexaoBanco = new ConexaoBanco();
             try
             {
-                // Abre a conexão
-                conexaoBanco.abrirConexao();
-
-                // Comando SQL para inserir os dados incluindo a imagem
-                string query = @"INSERT INTO seopimenta.usuario (nivel, usuario, senha, id_funcionario, imagem) 
-                         VALUES (@nivel, @usuario, @senha, @id_funcionario, @imagem)";
-
-                // Configura o comando com a consulta SQL e a conexão aberta
-                MySqlCommand command = conexaoBanco.consulta(query);
-
-                // Adiciona os parâmetros
-                command.Parameters.AddWithValue("@nivel", usuarioCadastro.getNivel());
-                command.Parameters.AddWithValue("@usuario", usuarioCadastro.getEmail());
-                command.Parameters.AddWithValue("@senha", hashSenha);  // Armazena o hash da senha
-                command.Parameters.AddWithValue("@id_funcionario", idFuncionario);
-
-                // Adiciona o parâmetro da imagem, se uma imagem foi selecionada
-                if (imagemBytes != null)
+                // Valida se o campo de e-mail está preenchido
+                if (string.IsNullOrWhiteSpace(txtUsuario.Text))
                 {
-                    command.Parameters.AddWithValue("@imagem", imagemBytes);
-                }
-                else
-                {
-                    command.Parameters.AddWithValue("@imagem", DBNull.Value);
+                    throw new Exception("O campo de usuario deve ser preenchido.");
                 }
 
-                // Executa o comando
-                command.ExecuteNonQuery();
+                // Valida se o campo de senha está preenchido
+                if (string.IsNullOrWhiteSpace(txtSenha.Text))
+                {
+                    throw new Exception("O campo de senha deve ser preenchido.");
+                }
 
-                // Mostra mensagem de sucesso
-                MessageBox.Show("Usuário cadastrado com sucesso!");
+                // Valida se o campo de nível está selecionado
+                if (cbbNivel.SelectedItem == null)
+                {
+                    throw new Exception("O campo de nível deve ser selecionado.");
+                }
+
+                // Define as propriedades do usuário
+                usuarioCadastro.setEmail(txtUsuario.Text);
+                usuarioCadastro.setNivel(Convert.ToInt32(cbbNivel.SelectedItem.ToString()));
+                usuarioCadastro.setSenha(txtSenha.Text);
+
+                // Verifica se idFuncionario é nulo
+                if (cbbFuncionario.SelectedValue == null)
+                {
+                    throw new Exception("O campo de funcionário deve ser selecionado.");
+                }
+
+                int idFuncionario = Convert.ToInt32(cbbFuncionario.SelectedValue);
+
+                // Gera o hash da senha
+                string hashSenha = usuarioCadastro.GerarHashSHA256(usuarioCadastro.getSenha());
+
+                // Carrega a imagem selecionada em um array de bytes
+                byte[] imagemBytes = GetImageCadastro();
+
+                var conexaoBanco = new ConexaoBanco();
+                try
+                {
+                    // Abre a conexão
+                    conexaoBanco.abrirConexao();
+
+                    // Comando SQL para inserir os dados incluindo a imagem
+                    string query = @"INSERT INTO seopimenta.usuario (nivel, usuario, senha, id_funcionario, imagem) 
+                             VALUES (@nivel, @usuario, @senha, @id_funcionario, @imagem)";
+
+                    MySqlCommand command = conexaoBanco.consulta(query);
+
+                    // Adiciona os parâmetros
+                    command.Parameters.AddWithValue("@nivel", usuarioCadastro.getNivel());
+                    command.Parameters.AddWithValue("@usuario", usuarioCadastro.getEmail());
+                    command.Parameters.AddWithValue("@senha", hashSenha);  // Armazena o hash da senha
+                    command.Parameters.AddWithValue("@id_funcionario", idFuncionario);
+
+                    // Adiciona o parâmetro da imagem, se uma imagem foi selecionada
+                    command.Parameters.AddWithValue("@imagem", imagemBytes != null ? (object)imagemBytes : DBNull.Value);
+
+                    // Executa o comando
+                    command.ExecuteNonQuery();
+
+                    // Mostra mensagem de sucesso
+                    MessageBox.Show("Usuário cadastrado com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    // Mostra mensagem de erro
+                    MessageBox.Show("Erro ao cadastrar usuário: " + ex.Message);
+                }
+                finally
+                {
+                    // Fecha a conexão no bloco finally para garantir que seja fechada
+                    conexaoBanco.fecharConexao();
+                }
             }
             catch (Exception ex)
             {
                 // Mostra mensagem de erro
-                MessageBox.Show("Erro ao cadastrar usuário: " + ex.Message);
+                MessageBox.Show("Favor completar todos os campos: " + ex.Message);
             }
-            finally
-            {
-                // Fecha a conexão
-                conexaoBanco.fecharConexao();
-            }
+
+            // Chama o evento do botão Cancelar
+            btnCancelar_Click(sender, e);
         }
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
