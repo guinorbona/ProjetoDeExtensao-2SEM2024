@@ -1,4 +1,6 @@
 ﻿using SeoPimenta.Classes;
+using SeoPimenta.Classes.CadastroProduto;
+using SeoPimenta.Telas.CadastroProcuraProdutos;
 using SeoPimenta.Telas.menuFuncionarioUsuario;
 using System;
 using System.Collections.Generic;
@@ -15,6 +17,7 @@ namespace SeoPimenta
 {
     public partial class telaInicial : Form
     {
+        private Cadastro cadastro; //<-- Cadastro de produtos
         Usuario usuarioLogado;
         telaLogin telaLogin;
 
@@ -229,6 +232,11 @@ namespace SeoPimenta
                 MessageBox.Show("Ocorreu um erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void btnCadastrarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaCadastroProduto(cadastro));
         }
     }
 }

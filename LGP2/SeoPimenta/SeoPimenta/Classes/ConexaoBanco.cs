@@ -63,5 +63,33 @@ namespace SeoPimenta.Classes
             }
         }
 
+
+        //Serve para carregar os dados das tabelas para os comboBoxs
+
+        public void CarregarCB(ComboBox nome, string dado, string sql)
+        {
+
+            MySqlCommand cmd;
+
+            abrirConexao();
+
+
+            try
+            {
+                cmd = consulta(sql);
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da.SelectCommand = cmd;
+                DataTable table = new DataTable();
+                da.Fill(table);
+                nome.DataSource = table;
+                nome.DisplayMember = dado;
+                fecharConexao();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
     }
 }
