@@ -296,6 +296,7 @@
             this.btnVizualizarProdutos.TabIndex = 0;
             this.btnVizualizarProdutos.Text = "Vizualizar";
             this.btnVizualizarProdutos.UseVisualStyleBackColor = true;
+            this.btnVizualizarProdutos.Click += new System.EventHandler(this.btnVizualizarProdutos_Click);
             // 
             // painelMenuFuncionarios
             // 

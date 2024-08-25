@@ -82,6 +82,7 @@
             this.btnCadastrar.TabIndex = 85;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnCancelar
             // 
@@ -91,6 +92,7 @@
             this.btnCancelar.TabIndex = 84;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // label9
             // 
@@ -221,6 +223,7 @@
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image.TabIndex = 83;
             this.image.TabStop = false;
+            this.image.Click += new System.EventHandler(this.image_Click);
             // 
             // TelaCadastroProduto
             // 
@@ -248,6 +251,7 @@
             this.Controls.Add(this.label14);
             this.Name = "TelaCadastroProduto";
             this.Text = "TelaCadastroProduto";
+            this.Load += new System.EventHandler(this.TelaCadastroProduto_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

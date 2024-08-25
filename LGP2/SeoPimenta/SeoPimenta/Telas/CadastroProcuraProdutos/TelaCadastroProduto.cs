@@ -58,34 +58,26 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
 
 
             //recupera o texto do componente textbox e remove os espaços em branco do começo e fim
-            string nome = txbNome.Text.Trim();
-            if (nome == "")
+
+
+            if (string.IsNullOrWhiteSpace(txbNome.Text))
             {
                 Ferramentas.mostraErroTextBox(txbNome, "Insira um valor para o campo \"Nome\"");
                 return;
             }
 
+            string nome = txbNome.Text;
+
+
 
 
             //pega e valida os dados do textbox
-            int id_unidade_medida;
+            if (cbCategoria.SelectedValue == null)
+            {
+                throw new Exception("Insira um valor para o campo unidade de medida");
+            }
 
-            try
-            {
-                if (cb_UM.Text.Equals("ml"))
-                {
-                    id_unidade_medida = 1;
-                }
-                else
-                {
-                    id_unidade_medida = 0;
-                }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Insira um valor para o campo \" unidade de medida\"");
-                return;
-            }
+            int id_unidade_medida = Convert.ToInt32(cbCategoria.SelectedValue);
 
 
             string descricao = txbDescricao.Text.Trim();
@@ -117,52 +109,26 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
             }
 
 
-            //=================================================================================================================================================================
-            // está dando erro em id_ categofia concertar mais tarde 
 
-            int id_categoria;
-            try
+
+            if (cbCategoria.SelectedValue == null)
             {
-                if (cbCategoria.Text.Equals("fruta"))
-                {
-                    id_categoria = 1;
-                }
-                if (cbCategoria.Text.Equals("suco"))
-                {
-                    id_categoria = 2;
-                }
-                else
-                {
-                    id_categoria = 1;
-                }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Insira um valor para o campo \"Id Categoria\"");
-                return;
+                throw new Exception("O Campo de Categorias deve ser selecionado");
             }
 
-            int id_subcategoria;
-            try
+            int id_categoria = Convert.ToInt32(cbCategoria.SelectedValue);
+
+
+
+
+            // Verifica se id_subcategoria é nulo
+            if (cbCategoria.SelectedValue == null)
             {
-                if (cb_SubCat.Text.Equals("fruta"))
-                {
-                    id_subcategoria = 1;
-                }
-                if (cb_SubCat.Text.Equals("suco"))
-                {
-                    id_subcategoria = 2;
-                }
-                else
-                {
-                    id_subcategoria = 0;
-                }
+                throw new Exception("O Campo de Categorias deve ser selecionado");
             }
-            catch (FormatException)
-            {
-                MessageBox.Show("Insira um valor para o campo \"Id Sub Categoria\"");
-                return;
-            }
+            int id_subcategoria = Convert.ToInt32(cb_SubCat.SelectedValue);
+
+
 
             //pega e valida os dados do textbox
             double valor_compra;
@@ -292,10 +258,56 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
 
 
 
-        private void TelaCadastroProduto_Load(object sender, EventArgs e)
+        private void retorna_CB(ComboBox campo, string nomeTabela)
+        {
+            try
+            {
+                ConexaoBanco conexao = new ConexaoBanco();
+                conexao.abrirConexao();
+
+                string comando = "SELECT id, nome FROM seopimenta." + nomeTabela;
+                conexao.consulta(comando);
+
+                MySqlDataReader final = conexao.cmd.ExecuteReader();
+
+                // Criar um dicionário para armazenar o id e o nome
+                Dictionary<string, string> categoriasDict = new Dictionary<string, string>();
+
+                string idOBJnulo = "";
+                string nomeOBJnulo = "";
+
+                // Adicionar o id e o nome ao dicionário
+                categoriasDict.Add(idOBJnulo, nomeOBJnulo);
+
+                while (final.Read())
+                {
+                    string idOBJ = final["id"].ToString();
+                    string nomeOBJ = final["nome"].ToString();
+
+                    // Adicionar o id e o nome ao dicionário
+                    categoriasDict.Add(idOBJ, nomeOBJ);
+                }
+
+                // Vincular o dicionário ao ComboBox
+                campo.DataSource = new BindingSource(categoriasDict, null);
+                campo.DisplayMember = "Value";  // Exibir o nome
+                campo.ValueMember = "Key";      // Armazenar o id
+
+                conexao.fecharConexao();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
+        private void TelaCadastroProduto_Load_1(object sender, EventArgs e)
         {
             preencheCBUnidadeMedida();
             preencheCBCat();
+            retorna_CB(cb_UM, "undmedida");
+            retorna_CB(cbCategoria, "categoria");
+            retorna_CB(cb_SubCat, "categoria");
         }
     }
 }

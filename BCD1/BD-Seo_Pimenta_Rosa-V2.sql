@@ -102,12 +102,15 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `seopimenta`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(100) NOT NULL,
-  `email` VARCHAR(100) NOT NULL,
+  `nivel` SMALLINT NOT NULL,
+  `imagem` LONGBLOB NULL DEFAULT NULL,
+  `disponibilidade` SMALLINT NOT NULL,
+  `data_criacao` DATE NOT NULL,
+  `usuario` VARCHAR(100) NOT NULL,
   `senha` VARCHAR(100) NOT NULL,
   `id_funcionario` INT NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `email` (`email` ASC) VISIBLE,
+  UNIQUE INDEX `usuario` (`usuario` ASC) VISIBLE,
   INDEX `id_funcionario` (`id_funcionario` ASC) VISIBLE,
   CONSTRAINT `usuario_ibfk_1`
     FOREIGN KEY (`id_funcionario`)
@@ -216,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `seopimenta`.`produto` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `descricao` TEXT NULL DEFAULT NULL,
-  `imagem` VARCHAR(255) NULL DEFAULT NULL,
+  `imagem` LONGBLOB NULL DEFAULT NULL,
   `valor_compra` DECIMAL(10,2) NULL DEFAULT NULL,
   `valor_venda` DECIMAL(10,2) NULL DEFAULT NULL,
   `id_unidade_medida` INT NULL DEFAULT NULL,

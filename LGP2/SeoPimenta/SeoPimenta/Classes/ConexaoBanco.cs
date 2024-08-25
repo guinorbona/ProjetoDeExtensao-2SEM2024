@@ -16,7 +16,7 @@ namespace SeoPimenta.Classes
         public string data_source = @"server=localhost;
                               port=3306;
                               uid=root;
-                              pwd=1234;database=seopimenta;
+                              pwd=ifsp;database=seopimenta;
                               ConnectionTimeout=1";
         public MySqlConnection Connection;
         public MySqlCommand cmd;

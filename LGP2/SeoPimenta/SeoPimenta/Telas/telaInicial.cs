@@ -24,6 +24,7 @@ namespace SeoPimenta
         public telaInicial()
         {
             InitializeComponent();
+            Cadastro cadastro = new Cadastro();
         }
 
         public telaInicial(telaLogin telaLogin, Usuario usuarioLogado)
@@ -237,6 +238,11 @@ namespace SeoPimenta
         private void btnCadastrarProdutos_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new TelaCadastroProduto(cadastro));
+        }
+
+        private void btnVizualizarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaListarProdutos());
         }
     }
 }

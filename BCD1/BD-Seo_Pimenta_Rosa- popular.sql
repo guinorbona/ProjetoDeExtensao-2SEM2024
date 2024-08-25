@@ -5,9 +5,6 @@ INSERT INTO `endereco` (`logradouro`, `numero`, `bairro`, `cidade`, `estado`, `c
 ('Rua das Flores', '123', 'Jardim das Rosas', 'São Paulo', 'SP', '01234567'),
 ('Avenida Paulista', '1500', 'Bela Vista', 'São Paulo', 'SP', '01310000');
 
-INSERT INTO `seopimenta`.`funcionario` (`id`, `nome`, `cpf`, `email`, `senha`, `id_endereco`, `id_telefone`, `id_cargo`) VALUES
-(1, 'João Silva', '123.456.789-00', 'joao.silva@example.com', 'senha123', 1, 1, 1),
-(2, 'Maria Oliveira', '987.654.321-00', 'maria.oliveira@example.com', 'senha456', 2, 2, 2);
 -- Insert into telefone
 INSERT INTO `telefone` (`numero`) VALUES
 ('11999999999'),
@@ -18,14 +15,18 @@ INSERT INTO `cargo` (`nome`, `data_inicio`, `data_fim`) VALUES
 ('Gerente', '2020-01-01', NULL),
 ('Assistente', '2021-06-15', NULL);
 
+INSERT INTO `seopimenta`.`funcionario` (`id`, `nome`, `cpf`, `email`, `senha`, `id_endereco`, `id_telefone`, `id_cargo`) VALUES
+(1, 'João Silva', '123.456.789-00', 'joao.silva@example.com', 'senha123', 1, 1, 1),
+(2, 'Maria Oliveira', '987.654.321-00', 'maria.oliveira@example.com', 'senha456', 2, 2, 2);
+
 INSERT INTO `seopimenta`.`usuario` (`nivel`, `usuario`, `senha`, `id_funcionario`, `disponibilidade`, `data_criacao`) VALUES
 (2, 'joaoadmin', SHA2('senha123', 256), 1, 1, NOW()),
 (1, 'mariauser', SHA2('senha123', 256), 2, 1, NOW());
 
 -- Insert into usuario
-INSERT INTO `usuario` (`nivel`, `usuario`, `senha`, `id_funcionario`, `disponibilidade`, `data_criacao`) VALUES
-(2, 'joaoadmin', SHA256('senha123', 256), 1, 1, NOW()),
-(1, 'mariauser', SHA256('senha123', 256), 2, 1, NOW());
+-- INSERT INTO `usuario` (`nivel`, `usuario`, `senha`, `id_funcionario`, `disponibilidade`, `data_criacao`) VALUES
+-- (2, 'joaoadmin', SHA256('senha123', 256), 1, 1, NOW()),
+-- (1, 'mariauser', SHA256('senha123', 256), 2, 1, NOW());
 
 -- Insert into acesso
 INSERT INTO `acesso` (`data_hora_login`, `endereco_ip`, `id_usuario`) VALUES
