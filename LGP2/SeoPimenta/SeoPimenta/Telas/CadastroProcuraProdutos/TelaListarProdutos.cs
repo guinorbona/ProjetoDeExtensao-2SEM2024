@@ -30,11 +30,11 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
 
                 // Comando SQL para buscar todos os usuários com informações adicionais
                 string query = "SELECT produto.id, produto.nome, produto.descricao," +
-                       "produto.imagem, produto.valor_compra, produto.valor_venda, produto.id_unidade_medida," +
-                       "produto.id_categoria, produto.id_subcategoria " +
-                "FROM produto " +
-                "INNER JOIN undmedida ON produto.id_unidade_medida = undmedida.id " +
-                "INNER JOIN categoria ON produto.id_categoria = categoria.id ";
+               "produto.imagem, produto.valor_compra, produto.valor_venda, " +
+               "undmedida.nome AS unidade_medida, categoria.nome AS categoria_nome " +
+               "FROM produto " +
+               "INNER JOIN undmedida ON produto.id_unidade_medida = undmedida.id " +
+               "INNER JOIN categoria ON produto.id_categoria = categoria.id ";
 
 
                 MySqlCommand command = conexaoBanco.consulta(query);
