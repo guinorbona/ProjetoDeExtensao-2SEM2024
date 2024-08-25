@@ -1,6 +1,7 @@
 ﻿using SeoPimenta.Classes;
 using SeoPimenta.Classes.CadastroProduto;
 using SeoPimenta.Telas.CadastroProcuraProdutos;
+using SeoPimenta.Telas.estoqueProduto;
 using SeoPimenta.Telas.menuFuncionarioUsuario;
 using System;
 using System.Collections.Generic;
@@ -242,7 +243,7 @@ namespace SeoPimenta
 
         private void btnVizualizarProdutos_Click(object sender, EventArgs e)
         {
-            openChildFormInPanel(new TelaListarProdutos());
+            openChildFormInPanel(new visualizarEstoque());
         }
     }
 }

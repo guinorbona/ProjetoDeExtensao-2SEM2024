@@ -1,4 +1,6 @@
-﻿using SeoPimenta.Telas.menuFornecedor;
+﻿using MySql.Data.MySqlClient;
+using SeoPimenta.Classes;
+using SeoPimenta.Telas.menuFornecedor;
 using SeoPimenta.Telas.menuFuncionarioUsuario;
 using System;
 using System.Collections.Generic;
@@ -136,5 +138,64 @@ namespace SeoPimenta.Telas.estoqueProduto
                 Application.Run(new telaFornecedor());
             }
         }
+
+        private void visualizarEstoque_Load(object sender, EventArgs e)
+        {
+            MT();
+            
+        }
+
+
+
+
+        private void MT()
+        {
+            var conexaoBanco = new ConexaoBanco();
+            try
+            {
+                // Abre a conexão com o banco de dados
+                conexaoBanco.abrirConexao();
+
+                // Comando SQL para buscar todos os usuários com informações adicionais
+                string query = "SELECT estoque.id as Id_Produto, " +
+                                "nome as Nome_Produto, " +
+                                "quantidade as Quantidade_estoque, " +
+                                "compra.data_ as Data_Compra " +
+                                "FROM estoque " +
+                                "inner join produto on produto.id = estoque.id_produto " +
+                                "inner join compra on compra.id = estoque.id_produto " +
+                                "Order By estoque.id asc";
+                ;
+
+
+                MySqlCommand command = conexaoBanco.consulta(query);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    // Cria um DataTable para armazenar os dados
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+
+                    // Define o DataSource do DataGridView para o DataTable
+                    dgvEstoque.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Mostra mensagem de erro
+                MessageBox.Show("Erro ao carregar usuários: " + ex.Message);
+            }
+            finally
+            {
+                // Fecha a conexão
+                conexaoBanco.fecharConexao();
+            }
+        }
+
+
+
+
+
+
     }
 }
