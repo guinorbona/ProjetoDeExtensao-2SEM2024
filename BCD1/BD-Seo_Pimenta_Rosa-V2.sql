@@ -102,23 +102,25 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `seopimenta`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `nivel` SMALLINT NOT NULL,
-  `imagem` LONGBLOB NULL DEFAULT NULL,
-  `disponibilidade` SMALLINT NOT NULL,
-  `data_criacao` DATE NOT NULL,
-  `usuario` VARCHAR(100) NOT NULL,
-  `senha` VARCHAR(100) NOT NULL,
+  `nivel` INT NOT NULL, -- Alterado para INT se for um número
+  `usuario` VARCHAR(100) NOT NULL, -- Alterado para VARCHAR para suportar nomes de usuário
+  `senha` VARCHAR(255) NOT NULL,
   `id_funcionario` INT NOT NULL,
+  `disponibilidade` TINYINT(1) NOT NULL DEFAULT 1, -- 1 for active, 0 for inactive
+  `data_criacao` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Creation timestamp
+  `imagem` LONGBLOB, -- Coluna para armazenar a imagem
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `usuario` (`usuario` ASC) VISIBLE,
-  INDEX `id_funcionario` (`id_funcionario` ASC) VISIBLE,
+  UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC), -- Garante unicidade do campo usuario
+  UNIQUE INDEX `id_funcionario_UNIQUE` (`id_funcionario` ASC), -- Garante unicidade do campo id_funcionario
+  INDEX `id_funcionario` (`id_funcionario` ASC),
   CONSTRAINT `usuario_ibfk_1`
     FOREIGN KEY (`id_funcionario`)
-    REFERENCES `seopimenta`.`funcionario` (`id`))
+    REFERENCES `seopimenta`.`funcionario` (`id`)
+    ON DELETE CASCADE
+)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
-
 
 -- -----------------------------------------------------
 -- Table `seopimenta`.`acesso`
