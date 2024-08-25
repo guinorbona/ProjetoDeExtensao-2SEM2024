@@ -96,8 +96,10 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
             }
 
 
+            
+
             //recupera o texto do componente textbox e remove os espaços em branco do começo e fim
-            int id;
+           /* int id;
             try
             {
                 id = int.Parse(txbId.Text.Trim());
@@ -108,7 +110,7 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
                 return;
             }
 
-
+            */
 
 
             if (cbCategoria.SelectedValue == null)
@@ -156,7 +158,7 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
             try
             {
                 //cria um objeto funcionário com os dados dos textbox
-                Produto produto = new Produto(id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
+                Produto produto = new Produto(/*id,*/ nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
                 
                 
                 //Solução temporaria se isso não tiver aqui essa merda simplesmente não funciona
@@ -243,6 +245,17 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
 
 
 
+        private void ReturnarId()
+        {
+            string sql;
+            sql = "SELECT id FROM produto ORDER BY id DESC LIMIT 1 ";
+
+            con.CarregarId(txbId, sql);
+
+        }
+
+
+
 
         private void preencheCBUnidadeMedida()
         {
@@ -311,6 +324,10 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
             retorna_CB(cb_UM, "undmedida");
             retorna_CB(cbCategoria, "categoria");
             retorna_CB(cb_SubCat, "categoria");
+            ReturnarId();
         }
+
+
+
     }
 }

@@ -91,5 +91,37 @@ namespace SeoPimenta.Classes
             }
         }
 
+
+
+        public void CarregarId(TextBox nome, string sql)
+        {
+
+            MySqlCommand cmd;
+
+            abrirConexao();
+
+
+            try
+            {
+                 cmd = consulta(sql);
+                object valor = cmd.ExecuteScalar();
+                if (valor != null)
+                {
+                    string temp = valor.ToString();
+                    int temp2 = int.Parse(temp) + 1;
+                    nome.Text = temp2.ToString();
+                }
+                else
+                {
+                    nome.Text = string.Empty;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
+
     }
 }

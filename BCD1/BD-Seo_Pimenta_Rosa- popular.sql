@@ -46,12 +46,14 @@ INSERT INTO `fornecedor` (`nome_fantasia`, `razao_social`, `cnpj`, `id_endereco`
 -- Insert into undmedida
 INSERT INTO `undmedida` (`nome`) VALUES
 ('Unidade'),
-('Metro');
+('ml'),
+('Kg'),
+('g');
 
 -- Insert into produto
-INSERT INTO `produto` (`nome`, `descricao`, `imagem`, `valor_compra`, `valor_venda`, `id_unidade_medida`, `id_categoria`, `id_subcategoria`) VALUES
-('Notebook', 'Notebook de última geração', 'notebook.jpg', 2500.00, 3000.00, 1, 1, NULL),
-('Mesa', 'Mesa de madeira', 'mesa.jpg', 200.00, 350.00, 2, 2, NULL);
+-- INSERT INTO `produto` (`nome`, `descricao`, `imagem`, `valor_compra`, `valor_venda`, `id_unidade_medida`, `id_categoria`, `id_subcategoria`) VALUES
+-- ('Notebook', 'Notebook de última geração', 'notebook.jpg', 2500.00, 3000.00, 1, 1, NULL),
+-- ('Mesa', 'Mesa de madeira', 'mesa.jpg', 200.00, 350.00, 2, 2, NULL);
 
 -- Insert into compra
 INSERT INTO `compra` (`data_`, `nfiscal`, `total`, `parcelas`, `status_`, `id_fornecedor`, `id_tipo_pagamento`) VALUES
@@ -59,28 +61,28 @@ INSERT INTO `compra` (`data_`, `nfiscal`, `total`, `parcelas`, `status_`, `id_fo
 ('2024-07-25 10:30:00', 654321, 700.00, 2, 'Pendente', 2, NULL);
 
 -- Insert into itenscompra
-INSERT INTO `itenscompra` (`quantidade`, `valor`, `id_compra`, `id_produto`) VALUES
-(1, 2500.00, 1, 1),
-(2, 350.00, 2, 2);
+-- INSERT INTO `itenscompra` (`quantidade`, `valor`, `id_compra`, `id_produto`) VALUES
+-- (1, 2500.00, 1, 1),
+-- (2, 350.00, 2, 2);
 
 -- Insert into consumo
-INSERT INTO `consumo` (`data_`, `nfiscal`, `total`, `parcelas`, `avista`, `status_`, `id_compra`, `id_produto`) VALUES
-('2024-08-01 15:00:00', NULL, 3500.00, 1, 1, 'Concluído', 1, 1);
+-- INSERT INTO `consumo` (`data_`, `nfiscal`, `total`, `parcelas`, `avista`, `status_`, `id_compra`, `id_produto`) VALUES
+-- ('2024-08-01 15:00:00', NULL, 3500.00, 1, 1, 'Concluído', 1, 1);
 
 -- Insert into itensconsumo
-INSERT INTO `itensconsumo` (`quantidade`, `valor`, `id_consumo`, `id_produto`) VALUES
-(1, 3000.00, 1, 1),
-(1, 500.00, 1, 2);
+-- INSERT INTO `itensconsumo` (`quantidade`, `valor`, `id_consumo`, `id_produto`) VALUES
+-- (1, 3000.00, 1, 1),
+-- (1, 500.00, 1, 2);
 
 -- Insert into estoque
-INSERT INTO `estoque` (`quantidade`, `id_produto`) VALUES
-(10, 1),
-(15, 2);
+-- INSERT INTO `estoque` (`quantidade`, `id_produto`) VALUES
+-- (10, 1),
+-- (15, 2);
 
 -- Insert into historico_precos
-INSERT INTO `historico_precos` (`preco`, `data_criacao`, `id_produto`, `id_fornecedor`) VALUES
-(2500.00, '2024-06-01', 1, 1),
-(200.00, '2024-06-15', 2, 2);
+-- INSERT INTO `historico_precos` (`preco`, `data_criacao`, `id_produto`, `id_fornecedor`) VALUES
+-- (2500.00, '2024-06-01', 1, 1),
+-- (200.00, '2024-06-15', 2, 2);
 
 -- Insert into salario
 INSERT INTO `salario` (`salario`, `data_inicio`, `data_fim`, `id_funcionario`) VALUES

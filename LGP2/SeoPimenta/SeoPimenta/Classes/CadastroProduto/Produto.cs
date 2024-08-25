@@ -19,7 +19,7 @@ namespace SeoPimenta.Classes.CadastroProduto
         private int id_categoria;
         private int id_subcategoria;
 
-        public Produto(int id, string nome, string descricao, byte[] imagem, double valor_compra,
+        public Produto(/*int id*/ string nome, string descricao, byte[] imagem, double valor_compra,
                         double valor_venda, int id_unidade_medida, int id_categoria, int id_subcategoria)
         {
 

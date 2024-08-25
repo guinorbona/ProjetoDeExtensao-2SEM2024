@@ -76,22 +76,28 @@
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCadastrar.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCadastrar.Location = new System.Drawing.Point(281, 187);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(129, 42);
             this.btnCadastrar.TabIndex = 85;
             this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCancelar.Location = new System.Drawing.Point(12, 187);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 42);
             this.btnCancelar.TabIndex = 84;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // label9
@@ -139,15 +145,17 @@
             // 
             // txbId
             // 
-            this.txbId.Location = new System.Drawing.Point(99, 34);
+            this.txbId.Enabled = false;
+            this.txbId.Location = new System.Drawing.Point(99, 2);
             this.txbId.Margin = new System.Windows.Forms.Padding(2);
             this.txbId.Name = "txbId";
+            this.txbId.ReadOnly = true;
             this.txbId.Size = new System.Drawing.Size(120, 20);
             this.txbId.TabIndex = 77;
             // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(99, 6);
+            this.txbNome.Location = new System.Drawing.Point(99, 34);
             this.txbNome.Margin = new System.Windows.Forms.Padding(2);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(120, 20);
@@ -196,7 +204,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 37);
+            this.label13.Location = new System.Drawing.Point(8, 5);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(21, 13);
@@ -206,7 +214,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(8, 8);
+            this.label14.Location = new System.Drawing.Point(8, 37);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(38, 13);

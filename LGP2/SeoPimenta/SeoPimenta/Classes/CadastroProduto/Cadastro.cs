@@ -127,7 +127,7 @@ namespace SeoPimenta.Classes.CadastroProduto
 
 
                     //cria um objeto do tipo Funcionario com os dados que vieram do banco!!!
-                    Produto = new Produto(id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
+                    Produto = new Produto(/*id,*/ nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
                 }
 
                 //tenho que fechar o reader após o uso !!!
