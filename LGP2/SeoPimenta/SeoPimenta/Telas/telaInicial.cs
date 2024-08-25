@@ -17,7 +17,7 @@ namespace SeoPimenta
 {
     public partial class telaInicial : Form
     {
-        private Cadastro cadastro; //<-- Cadastro de produtos
+        Cadastro cadastro; //<-- Cadastro de produtos
         Usuario usuarioLogado;
         telaLogin telaLogin;
 

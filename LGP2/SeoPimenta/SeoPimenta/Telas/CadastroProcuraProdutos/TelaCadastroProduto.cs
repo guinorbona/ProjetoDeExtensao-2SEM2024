@@ -17,7 +17,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 /*
  ===========================================================================================================================================================
-        ERRO LINHA 115 - tenho que colocar o else como 1 pois senão dá erro e crasha o programa
+        ERRO LINHA 162
  */
 
 namespace SeoPimenta.Telas.CadastroProcuraProdutos
@@ -157,7 +157,10 @@ namespace SeoPimenta.Telas.CadastroProcuraProdutos
             {
                 //cria um objeto funcionário com os dados dos textbox
                 Produto produto = new Produto(id, nome, descricao, imagem, valor_compra, valor_venda, id_unidade_medida, id_categoria, id_subcategoria);
-
+                
+                
+                //Solução temporaria se isso não tiver aqui essa merda simplesmente não funciona
+                Cadastro cadastro = new Cadastro();
                 //cadastra o funcionario no banco
                 cadastro.inserirProduto(produto);
 
