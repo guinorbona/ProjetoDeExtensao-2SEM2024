@@ -127,7 +127,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `seopimenta`.`acesso` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `data_hora_login` DATETIME NOT NULL,
+  `data_hora_login` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `endereco_ip` VARCHAR(45) NOT NULL,
   `id_usuario` INT NOT NULL,
   PRIMARY KEY (`id`),
