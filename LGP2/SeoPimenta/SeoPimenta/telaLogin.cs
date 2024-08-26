@@ -82,6 +82,15 @@ namespace SeoPimenta
 
                         usuario.setEndereco(endereco);
 
+                        leitor.Close();
+                        // Inserir o registro de acesso na tabela 'acesso'
+                        string insertAcesso = "INSERT INTO seopimenta.acesso (endereco_ip, id_usuario) VALUES (@EnderecoIP, @IdUsuario)";
+                        conexao.consulta(insertAcesso);
+                        conexao.cmd.Parameters.Clear();
+                        conexao.cmd.Parameters.AddWithValue("@EnderecoIP", GetLocalIPAddress()); // Método para obter o IP
+                        conexao.cmd.Parameters.AddWithValue("@IdUsuario", usuario.getUsuarioID());
+                        conexao.cmd.ExecuteNonQuery();
+
                         conexao.fecharConexao();
 
                         telaInicial telaIncial = new telaInicial(this,usuario);
