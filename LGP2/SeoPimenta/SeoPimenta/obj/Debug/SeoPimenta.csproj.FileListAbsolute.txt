@@ -185,3 +185,4 @@ C:\Users\Vlade\Documents\GitHub\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPi
 C:\Users\Vlade\Documents\GitHub\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.exe
 C:\Users\Vlade\Documents\GitHub\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.pdb
 C:\Users\Vlade\Documents\GitHub\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.CadastroProcuraProdutos.TelaListarProdutos.resources
+C:\Users\Vlade\Documents\GitHub\ProjetoDeExtensao-2SEM2024\LGP2\SeoPimenta\SeoPimenta\obj\Debug\SeoPimenta.Telas.CadastroProcuraProdutos.TelaEditarProduto.resources

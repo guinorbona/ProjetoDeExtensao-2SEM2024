@@ -126,6 +126,12 @@
     <Compile Include="Telas\CadastroProcuraProdutos\TelaCadastroProduto.Designer.cs">
       <DependentUpon>TelaCadastroProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaEditarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroProcuraProdutos\TelaEditarProduto.Designer.cs">
+      <DependentUpon>TelaEditarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastroProcuraProdutos\TelaListarProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\CadastroProcuraProdutos\TelaCadastroProduto.resx">
       <DependentUpon>TelaCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroProcuraProdutos\TelaEditarProduto.resx">
+      <DependentUpon>TelaEditarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastroProcuraProdutos\TelaListarProdutos.resx">
       <DependentUpon>TelaListarProdutos.cs</DependentUpon>

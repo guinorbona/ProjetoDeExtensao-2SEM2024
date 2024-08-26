@@ -245,5 +245,10 @@ namespace SeoPimenta
         {
             openChildFormInPanel(new visualizarEstoque());
         }
+
+        private void btnEditarProdutos_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new TelaEditarProduto(usuarioLogado));
+        }
     }
 }

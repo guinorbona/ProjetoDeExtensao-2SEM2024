@@ -3,27 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telaeditarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telaeditarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\menufuncionariousuario\\editaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\menufuncionariousuario\\editaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\cadastroproduto\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\cadastroproduto\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\menufuncionariousuario\\editaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\menufuncionariousuario\\editaruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telaeditarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telaeditarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\cadastroproduto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\cadastroproduto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\estoqueproduto\\visualizarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\estoqueproduto\\visualizarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telalistarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telalistarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telalistarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,32 +51,24 @@
       "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telalistarprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\estoqueproduto\\visualizarestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|c:\\users\\vlade\\documents\\github\\projetodeextensao-2sem2024\\lgp2\\seopimenta\\seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\cadastroprocuraprodutos\\telacadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\menufuncionariousuario\\cadastraruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telas\\menufuncionariousuario\\cadastraruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\cadastroproduto\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\cadastroproduto\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\classes\\cadastroproduto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\classes\\cadastroproduto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|solutionrelative:seopimenta\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6538D30-B518-443A-8879-A3A7B18DCAD9}|SeoPimenta\\SeoPimenta.csproj|C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\seopimenta\\telas\\menufuncionariousuario\\cadastrarfuncio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +94,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "editarUser.cs",
+              "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "RelativeDocumentMoniker": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "RelativeToolTip": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "ViewState": "AQIAAF8BAAAAAAAAAAAcwOkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:05:36.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelaEditarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "ViewState": "AQIAALABAAAAAAAAAAAqwL0BAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T23:58:21.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "editarUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "RelativeDocumentMoniker": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs",
+              "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs [Design]",
+              "RelativeToolTip": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\editarUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T23:52:59.523Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TelaEditarProduto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs",
+              "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs [Design]",
+              "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaEditarProduto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T23:52:20.25Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "visualizarEstoque.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\estoqueProduto\\visualizarEstoque.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\estoqueProduto\\visualizarEstoque.cs",
@@ -95,19 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "visualizarProdutos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\estoqueProduto\\visualizarProdutos.cs",
-              "RelativeDocumentMoniker": "SeoPimenta\\Telas\\estoqueProduto\\visualizarProdutos.cs",
-              "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\estoqueProduto\\visualizarProdutos.cs [Design]",
-              "RelativeToolTip": "SeoPimenta\\Telas\\estoqueProduto\\visualizarProdutos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T23:44:01.265Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "visualizarEstoque.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\estoqueProduto\\visualizarEstoque.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\estoqueProduto\\visualizarEstoque.cs",
@@ -119,62 +169,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "TelaListarProdutos.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
               "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAUwCUAAAAAAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAUwDIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T01:29:05.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "TelaListarProdutos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs [Design]",
               "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaListarProdutos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T22:07:48.065Z"
+              "WhenOpened": "2024-08-25T22:07:48.065Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "cadastrarUser.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarUser.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarUser.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarUser.cs",
               "RelativeToolTip": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarUser.cs",
-              "ViewState": "AQIAAMIAAAAAAAAAAAAQwJ0AAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAA4wJ0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T23:39:00.709Z"
+              "WhenOpened": "2024-08-24T23:39:00.709Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "TelaCadastroProduto.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs [Design]",
               "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T21:50:53.436Z"
+              "WhenOpened": "2024-08-24T21:50:53.436Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "TelaCadastroProduto.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
               "RelativeToolTip": "SeoPimenta\\Telas\\CadastroProcuraProdutos\\TelaCadastroProduto.cs",
-              "ViewState": "AQIAACQBAAAAAAAAAAAtwEoBAAAAAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T21:51:21.983Z"
+              "WhenOpened": "2024-08-24T21:51:21.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -184,13 +238,14 @@
               "RelativeDocumentMoniker": "SeoPimenta\\Classes\\ConexaoBanco.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Classes\\ConexaoBanco.cs",
               "RelativeToolTip": "SeoPimenta\\Classes\\ConexaoBanco.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAuwG4AAAAzAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAD8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T21:52:33.895Z"
+              "WhenOpened": "2024-08-24T21:52:33.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Classes\\CadastroProduto\\Produto.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Classes\\CadastroProduto\\Produto.cs",
@@ -198,36 +253,38 @@
               "RelativeToolTip": "SeoPimenta\\Classes\\CadastroProduto\\Produto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T21:49:24.835Z"
+              "WhenOpened": "2024-08-24T21:49:24.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "Cadastro.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Classes\\CadastroProduto\\Cadastro.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Classes\\CadastroProduto\\Cadastro.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Classes\\CadastroProduto\\Cadastro.cs",
               "RelativeToolTip": "SeoPimenta\\Classes\\CadastroProduto\\Cadastro.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAjwIEAAAAsAAAA",
+              "ViewState": "AQIAACYBAAAAAAAAAAAmwPcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T21:47:52.805Z"
+              "WhenOpened": "2024-08-24T21:47:52.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "telaInicial.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\telaInicial.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\telaInicial.cs",
               "ToolTip": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\telaInicial.cs",
               "RelativeToolTip": "SeoPimenta\\Telas\\telaInicial.cs",
-              "ViewState": "AQIAAOAAAAAAAAAAAAASwPUAAAA2AAAA",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAAAPoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T21:53:47.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "cadastrarFuncio.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarFuncio.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarFuncio.cs",
@@ -235,11 +292,12 @@
               "RelativeToolTip": "SeoPimenta\\Telas\\menuFuncionarioUsuario\\cadastrarFuncio.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T16:32:43.952Z"
+              "WhenOpened": "2024-08-25T16:32:43.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "telaInicial.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Telas\\telaInicial.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Telas\\telaInicial.cs",
@@ -251,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "telaLogin.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\telaLogin.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\telaLogin.cs",
@@ -263,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Ferramentas.cs",
               "DocumentMoniker": "C:\\Users\\Vlade\\Documents\\GitHub\\ProjetoDeExtensao-2SEM2024\\LGP2\\SeoPimenta\\SeoPimenta\\Classes\\CadastroProduto\\Ferramentas.cs",
               "RelativeDocumentMoniker": "SeoPimenta\\Classes\\CadastroProduto\\Ferramentas.cs",

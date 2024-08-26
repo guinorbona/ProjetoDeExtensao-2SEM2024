@@ -424,5 +424,10 @@ namespace SeoPimenta.Telas.menuFuncionarioUsuario
         {
 
         }
+
+        private void body_cadastrarUser_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -272,6 +272,7 @@
             this.btnEditarProdutos.TabIndex = 2;
             this.btnEditarProdutos.Text = "Editar";
             this.btnEditarProdutos.UseVisualStyleBackColor = true;
+            this.btnEditarProdutos.Click += new System.EventHandler(this.btnEditarProdutos_Click);
             // 
             // btnCadastrarProdutos
             // 

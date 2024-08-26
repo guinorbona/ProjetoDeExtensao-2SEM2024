@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.imageCadastro = new System.Windows.Forms.PictureBox();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -44,7 +45,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.imageCadastro = new System.Windows.Forms.PictureBox();
             this.body_cadastrarUser.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).BeginInit();
@@ -63,6 +63,7 @@
             this.body_cadastrarUser.Size = new System.Drawing.Size(1037, 729);
             this.body_cadastrarUser.TabIndex = 10;
             this.body_cadastrarUser.TabStop = false;
+            this.body_cadastrarUser.Enter += new System.EventHandler(this.body_cadastrarUser_Enter);
             // 
             // panel1
             // 
@@ -106,6 +107,18 @@
             this.label6.Size = new System.Drawing.Size(203, 25);
             this.label6.TabIndex = 65;
             this.label6.Text = "Usuários Cadastrados";
+            // 
+            // imageCadastro
+            // 
+            this.imageCadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imageCadastro.Image = global::SeoPimenta.Properties.Resources.sem_foto_prod1;
+            this.imageCadastro.Location = new System.Drawing.Point(348, 61);
+            this.imageCadastro.Name = "imageCadastro";
+            this.imageCadastro.Size = new System.Drawing.Size(227, 271);
+            this.imageCadastro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageCadastro.TabIndex = 64;
+            this.imageCadastro.TabStop = false;
+            this.imageCadastro.Click += new System.EventHandler(this.imageCadastro_Click);
             // 
             // btnAtualizar
             // 
@@ -235,18 +248,6 @@
             this.label1.Size = new System.Drawing.Size(222, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Editação de  Usuários";
-            // 
-            // imageCadastro
-            // 
-            this.imageCadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageCadastro.Image = global::SeoPimenta.Properties.Resources.sem_foto_prod1;
-            this.imageCadastro.Location = new System.Drawing.Point(348, 61);
-            this.imageCadastro.Name = "imageCadastro";
-            this.imageCadastro.Size = new System.Drawing.Size(227, 271);
-            this.imageCadastro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageCadastro.TabIndex = 64;
-            this.imageCadastro.TabStop = false;
-            this.imageCadastro.Click += new System.EventHandler(this.imageCadastro_Click);
             // 
             // editarUser
             // 
